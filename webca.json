@@ -1,0 +1,223 @@
+{
+  "cookies": [
+    {
+      "name": "CLID",
+      "value": "ea48f2695531451180e6ba67c0ef8e39.20241113.20251113",
+      "domain": "www.clarity.ms",
+      "path": "/",
+      "expires": 1763014269.973502,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_clck",
+      "value": "59895n%7C2%7Cfqu%7C0%7C1778",
+      "domain": ".pocket.tw",
+      "path": "/",
+      "expires": 1763014274,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.702640486.1731478275",
+      "domain": ".pocket.tw",
+      "path": "/",
+      "expires": 1731564710,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "test_cookie",
+      "value": "CheckForPermission",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1731479174.819885,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MUID",
+      "value": "3481489851D965F634395DAE50A4646A",
+      "domain": ".bing.com",
+      "path": "/",
+      "expires": 1765174275.962208,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1732083075.962506,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SRM_B",
+      "value": "3481489851D965F634395DAE50A4646A",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1765174275.962667,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SM",
+      "value": "C",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MUID",
+      "value": "3481489851D965F634395DAE50A4646A",
+      "domain": ".clarity.ms",
+      "path": "/",
+      "expires": 1765174277.072002,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": 1732083077.072559,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ANONCHK",
+      "value": "0",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": 1731478877.073191,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "csrftoken",
+      "value": "Alpsf1piK7z4Lvg2fCc1O5zFP4KdG6nGzlk1XKLlDbft1F0xjoPqR9Y9ggDfHXI3",
+      "domain": "www.pocket.tw",
+      "path": "/",
+      "expires": 1762927911.938243,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sessionid",
+      "value": "7f122mn6gxeuc7h44sx6wl5apt3ekfje",
+      "domain": "www.pocket.tw",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "token",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxNTY0Njg4LCJqdGkiOiJkYjY0Nzc4NjE2Mjc0NzFlYjdmMWMyMzNjYWYwNjM2MSIsInVzZXJfdXNlcm5hbWUiOiJYRDdwYVh6WmJNIn0.X22qdyAmyyiNrMvvfD8O--CrFACmQ7gvhDH1YX-iNrQ",
+      "domain": "www.pocket.tw",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "refresh",
+      "value": "undefined",
+      "domain": "www.pocket.tw",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "is_system_password",
+      "value": "undefined",
+      "domain": "www.pocket.tw",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.2.1770127576.1731478274",
+      "domain": ".pocket.tw",
+      "path": "/",
+      "expires": 1766038310.236824,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_1Z1N25W2Q1",
+      "value": "GS1.1.1731478274.1.1.1731478311.23.0.0",
+      "domain": ".pocket.tw",
+      "path": "/",
+      "expires": 1766038311.152631,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_clsk",
+      "value": "y5of8e%7C1731478311206%7C2%7C1%7Cx.clarity.ms%2Fcollect",
+      "domain": ".pocket.tw",
+      "path": "/",
+      "expires": 1731564711,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Secure-JSESSIONID",
+      "value": "5A205990C31C3001B0F58A67DBC05945",
+      "domain": "www.pocket.tw",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.pocket.tw",
+      "localStorage": [
+        {
+          "name": "TWCA1731478337850",
+          "value": "{\"cn\":\"B222790712-00-00::HMC021\",\"issuer\":\"C=TW, O=TAIWAN-CA.COM Inc., OU=Certification Service Provider, CN=TaiCA Secure CA\",\"subject\":\"C=TW, O=TaiCA Secure CA, O=Certification Service Provider, OU=RA-POCKET, OU=MIS, CN=B222790712-00-00::HMC021, E=@@\",\"serial\":\"521062D0\",\"notBefore\":\"20241113141216\",\"notAfter\":\"20251113235959\",\"cs\":\"\",\"certb64\":\"MIIElzCCA3+gAwIBAgIEUhBi0DANBgkqhkiG9w0BAQUFADBtMQswCQYDVQQGEwJUVzEbMBkGA1UEChMSVEFJV0FOLUNBLkNPTSBJbmMuMScwJQYDVQQLEx5DZXJ0aWZpY2F0aW9uIFNlcnZpY2UgUHJvdmlkZXIxGDAWBgNVBAMTD1RhaUNBIFNlY3VyZSBDQTAeFw0yNDExMTMwNjEyMTZaFw0yNTExMTMxNTU5NTlaMIGoMQswCQYDVQQGEwJUVzEYMBYGA1UEChMPVGFpQ0EgU2VjdXJlIENBMScwJQYDVQQKEx5DZXJ0aWZpY2F0aW9uIFNlcnZpY2UgUHJvdmlkZXIxEjAQBgNVBAsTCVJBLVBPQ0tFVDEMMAoGA1UECxMDTUlTMSEwHwYDVQQDExhCMjIyNzkwNzEyLTAwLTAwOjpITUMwMjExETAPBgkqhkiG9w0BCQEWAkBAMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxN08thIP8+um0vA7qBB1vJVUPlMuTD15c+6hBK/CXyYHAYO3jtn92sLh2pmxZuSAp9T1OxMl1WfciTPooHYSt4h+LlCHyOkWnBJS8Ot4jqy5MvNkYf1rfz0Kwae8XuKjOGwCOJQPLAIf7EyCEAjVJDoVlrRta6aoBfhc/7OhN77IUu+yxGdOfT/1f+PKpr0vp1Tyv6Rhk8wk2TW4nXfAG5h7yuBOsfFG7Dsj8gsJOlLNQ2XakRRU2ce1kb7itlDQH+hYP5DhsLmV/iMg9V9j+4OdmBUJK1PhdHKGlSqSeeIitAjV+mE4CYZFmMtDHANmaFiRPxUyHrfBLEPop1eBJQIDAQABo4IBATCB/jAfBgNVHSMEGDAWgBTAshkS0soHqML9TLZBh7T/ow73tzAdBgNVHQ4EFgQUENB5kvWob7sLLOhGJhfbcpajWVYwSAYDVR0fBEEwPzA9oDugOYY3aHR0cDovL2l0YXgudHdjYS5jb20udHcvZWNwbHVzL2VjcGx1c19VQ0FfMjAxOF9zaGExLmNybDBXBgNVHSAEUDBOMEwGB2CGdgMBAwEwQTAbBggrBgEFBQcCARYPd3d3LnR3Y2EuY29tLnR3MCIGCCsGAQUFBwICMBYaFFJlc3RyaWN0aW9uID0zLjIuMi4xMAkGA1UdEwQCMAAwDgYDVR0PAQH/BAQDAgTwMA0GCSqGSIb3DQEBBQUAA4IBAQAMjC2Of+2kU4itAAOfi5xdBhB2QdtW3W8EuXZsvXOhVgtFiZPOY5s2wLD5M61Qh1IB8TmPbZKulMWshJw/x5uHxFAjj5CjL4762BHlrEVXplihMNmtS9aybG8PL5h8bSl+7EruavkUnYSrpDHeG8t8bHQDqeLB5a9SYnlc/c56uiG9ZRm87ClEZYFzAK9gtWfwhsG13GVJkD2Gm9LdMiAyD2GJTRq3OmQF6p+x/gT6tO2PdyWOPYmF4d4gAnzumPELv6jwunHwWrXj31HPJ8DMj9MJE5WwUikFtq8m5wbGxFNKBzVE11xBCpI0qgSt2OIaPTEkWEYQzvB64gy3ZxLT\",\"b64P12Cert\":\"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\",\"certfinger\":\"07d51b567988be167d71d10dbfc6226783ee9365\"}"
+        },
+        {
+          "name": "TWCACertIdxRef",
+          "value": "{\"TWCA1731478337850\":{\"cn\":\"B222790712-00-00::HMC021\",\"issuer\":\"C=TW, O=TAIWAN-CA.COM Inc., OU=Certification Service Provider, CN=TaiCA Secure CA\",\"subject\":\"C=TW, O=TaiCA Secure CA, O=Certification Service Provider, OU=RA-POCKET, OU=MIS, CN=B222790712-00-00::HMC021, E=@@\",\"serial\":\"521062D0\",\"notBefore\":\"20241113141216\",\"notAfter\":\"20251113235959\"}}"
+        },
+        {
+          "name": "TWCAAccountUqiDeviceID",
+          "value": "{\"B222790712\":\"153bf3ae-31f0-ba69-ee68-0b04698a842a-1731478335690\"}"
+        }
+      ]
+    }
+  ]
+}
