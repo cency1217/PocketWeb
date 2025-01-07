@@ -9,5 +9,4 @@ test('test', async ({ page }) => {
   await page.getByRole('link', { name: 'ETF專區', exact: true });
   await expect(page.getByText('ETF專區台股ETF美股ETF')).toBeVisible();
   await expect(page.getByRole('link', { name: '熱門排行' })).toBeVisible();
-  await page.getByRole('link', { name: 'ETF專區', exact: true });
 });
