@@ -14,4 +14,5 @@ test('normal_login', async ({ page }) => {
   
   await page.waitForTimeout(5000); 
   await page.context().storageState({path:'auth.json'}); //保存登入狀態json
+  await page.goBack();
 });
