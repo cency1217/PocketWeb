@@ -9,7 +9,6 @@ const PASSWORD = process.env.password || "" */
 
 export async function login(page: Page) {
   //
-  test.slow()
 
   const baseURL = test.info().project.use.baseURL || '';
   // 根據 baseURL 判斷環境
