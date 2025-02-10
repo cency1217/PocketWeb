@@ -1,6 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { webca } from '../utils/webca.spec' //使用憑證狀態
-test.use({ storageState:'webca.json'});
+import { webca } from '../utils/webca.spec' 
 
 test('withdraw', async ({ page }) => {
   await webca(page);
