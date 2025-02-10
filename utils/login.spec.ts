@@ -51,6 +51,7 @@ export async function login(page: Page) {
     await page.context().storageState({ path: 'auth.json' });
   } else{
     console.log('不需登入');
+    await page.context().storageState({ path: 'auth.json' });
   }
 
   

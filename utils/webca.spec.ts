@@ -2,7 +2,6 @@ import dotenv from 'dotenv';
 import { Page, test } from '@playwright/test';
 import { login } from "../utils/login.spec"
 
-test.use({ storageState:'auth.json'});
 test.use({ storageState:'webca.json'});
 
 dotenv.config();
@@ -42,6 +41,7 @@ export async function webca(page: Page) {
         await page.context().storageState({path:'webca.json'});
     } else{
         console.log("不需申請憑證");
+        await page.context().storageState({path:'webca.json'});
     }
 
 };
