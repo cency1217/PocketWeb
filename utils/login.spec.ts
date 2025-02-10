@@ -24,7 +24,7 @@ export async function login(page: Page) {
   console.log(`使用 baseURL: ${baseURL}`);
   console.log(`使用帳號: ${USERNAME}`);
 
-  // 前往登入頁面
+  // 前往首頁
   await page.goto('');
 
   // 檢查是否顯示登入提示文字
@@ -34,7 +34,6 @@ export async function login(page: Page) {
     console.log('需登入');
     // 填寫帳號
     await page.getByRole('textbox', { name: '請輸入身分證字號' }).fill(USERNAME);
-
     // 填寫密碼
     await page.locator('#password').fill(PASSWORD);
     await page.locator('#password').press('Tab');
