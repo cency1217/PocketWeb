@@ -216,7 +216,7 @@
       "origin": "https://www.pocket.tw",
       "localStorage": [
         {
-          "name": "TWCACertIdxRef",
+          "name": "",
           "value": "{\"TWCA1731930444540\":{\"cn\":\"B222790712-00-00::HMC022\",\"issuer\":\"C=TW, O=TAIWAN-CA.COM Inc., OU=Certification Service Provider, CN=TaiCA Secure CA\",\"subject\":\"C=TW, O=TaiCA Secure CA, O=Certification Service Provider, OU=RA-POCKET, OU=MIS, CN=B222790712-00-00::HMC022, E=@@\",\"serial\":\"52137B6C\",\"notBefore\":\"20241118194723\",\"notAfter\":\"20251118235959\"}}"
         },
         {

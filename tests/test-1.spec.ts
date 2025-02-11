@@ -4,7 +4,7 @@ import { login } from '../utils/login.spec';
 test('test', async ({ page }) => {
   await login(page);
 
-  await page.goto('/wallet');
+  await page.goto('/wallet/');
   await expect(page.getByRole('link', { name: '出款申請' })).toBeVisible();
 });
 
