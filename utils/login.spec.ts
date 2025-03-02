@@ -1,25 +1,10 @@
-import dotenv from 'dotenv';
 import { Page, test } from '@playwright/test';
-
+import { isUAT } from '../utils/isUAT'
 test.use({ storageState:'auth.json'});
 
-dotenv.config();
-/* const USERNAME = process.env.userID || ""
-const PASSWORD = process.env.password || "" */
-
 export async function login(page: Page) {
-  //
   test.slow()
-
-  const baseURL = test.info().project.use.baseURL || '';
-  // 根據 baseURL 判斷環境
-  const isUAT = baseURL.includes('labpocket');
-  const ENV = isUAT ? 'uat' : 'prod';
-  console.log(`當前環境: ${ENV}`);
-
-  // 根據環境設定帳號、密碼
-  const USERNAME = isUAT ? process.env.uat_userID || '' : process.env.userID || '';
-  const PASSWORD = isUAT ? process.env.uat_password || '' : process.env.password || ''
+  const { USERNAME, PASSWORD } = await isUAT(page);
 
   // 前往首頁
   await page.goto('');
@@ -46,6 +31,7 @@ export async function login(page: Page) {
     await page.waitForTimeout(5000);
      // 保存登入狀態到檔案
     await page.context().storageState({ path: 'auth.json' });
+    
   } else{
     console.log('不需登入');
     await page.context().storageState({ path: 'auth.json' });
