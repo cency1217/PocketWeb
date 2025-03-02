@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 import { Page, test } from '@playwright/test';
 import { login } from "../utils/login.spec"
 
-test.use({ storageState:'webca.json'});
+test.use({ storageState:'auth.json'});
 
 dotenv.config();
 

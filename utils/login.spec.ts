@@ -50,8 +50,4 @@ export async function login(page: Page) {
     console.log('不需登入');
     await page.context().storageState({ path: 'auth.json' });
   }
-
-  
-
-
 }
