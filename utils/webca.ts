@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import { Page, test ,expect } from '@playwright/test';
 import { login } from './login';
-import { getIdPwd } from './getIdPwd';
+import { getUser } from './getUser';
 
 test.use({ storageState:'webca.json'});
 
@@ -9,7 +9,7 @@ dotenv.config();
 
 export async function webca(page: Page) {
     test.setTimeout(150000);
-    const { BIRTHDAY } = await getIdPwd(page);
+    const { BIRTHDAY } = await getUser(page);
 
     //前往憑證申請頁
     await login(page);

@@ -1,11 +1,11 @@
 import { Page, test } from '@playwright/test';
-import { getIdPwd } from './getIdPwd';
+import { getUser } from './getUser';
 test.use({ storageState:'auth.json'});
 
 export async function login(page: Page) {
   //效能問題
   test.slow()
-  const { USERNAME, PASSWORD } = await getIdPwd(page);
+  const { USERNAME, PASSWORD } = await getUser(page);
   await page.goto('');
 
   const loginPrompt = await page.locator('#homepagebg').getByText('登入後提供更多服務').count();
