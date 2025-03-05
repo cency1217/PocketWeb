@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
-import { getIdPwd } from '../../utils/getIdPwd'
+import { getIdPwd } from '../../utils/getIdPwd' ;
 
 test('pwd_wrong_hint', async ({ page }) => {
   test.slow();
 
-  const {USERNAME} = await getidpwd(page);
+  const {USERNAME} = await getIdPwd(page);
 
   await page.goto('');
   await page.getByRole('textbox', { name: '請輸入身分證字號' }).fill(USERNAME);

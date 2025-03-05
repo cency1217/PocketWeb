@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import { Page, test ,expect } from '@playwright/test';
-import { login } from "./login"
-import { getIdPwd } from "./getIdPwd"
+import { login } from './login';
+import { getIdPwd } from './getIdPwd';
 
 test.use({ storageState:'webca.json'});
 
