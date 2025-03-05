@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 import { Page, test } from '@playwright/test';
 dotenv.config();
 
-export async function getidpwd(page: Page) {
+export async function getIdPwd(page: Page) {
   test.slow()
     // 根據 baseURL 判斷環境
   const baseURL = test.info().project.use.baseURL || '';

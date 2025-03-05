@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { getidpwd } from '../../utils/getidpwd'
+import { getIdPwd } from '../../utils/getIdPwd'
 
 test('pwd_wrong_hint', async ({ page }) => {
   test.slow();
