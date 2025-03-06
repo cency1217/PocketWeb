@@ -11,5 +11,9 @@
     "@playwright/test": "^1.48.0",
     "@types/node": "^22.7.5"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "tesseract.js": "^6.0.0"
+  }
 }
