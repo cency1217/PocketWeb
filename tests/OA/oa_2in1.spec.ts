@@ -1,11 +1,14 @@
 import { test, expect } from '@playwright/test';
+import { generateTaiwanID } from '../../utils/idGen';
 
 test('test', async ({ page }) => {
   test.setTimeout(150000);
   await page.goto('https://www.labpocket.tw/openaccountonline/oa/home?showYuShanBtn=Y&showSubBroBtn=Y&mkCode=MK0000&channel=CH0000&showRichartBtn=Y&show2h1Btn=Y');
   await page.getByRole('button', { name: '台股＋美股複委託', exact: true }).click();
 
-  await page.getByPlaceholder('請輸入身分證字號').fill('A164020481');
+  // 使用產生的身分證字號
+  const idCard = generateTaiwanID(); 
+  await page.getByPlaceholder('請輸入身分證字號').fill(idCard);
   await page.getByPlaceholder('YYYY-MM-DD').fill('1980-01-01');
   await page.getByPlaceholder('請輸入10碼手機號碼').fill('0900000000');
   await page.getByRole('button', { name: '傳送驗證碼' }).click();
@@ -26,14 +29,15 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: '開始申請' }).click();
   await page.waitForTimeout(30000);
 
-  // await page.getByRole('button', { name: '上傳身分證正面 在拍攝時請避免反光、模糊、陰影' }).setInputFiles('Users\ceneyhuang\Documents\Test\filesid-01.jpg');
-  // await page.getByRole('button', { name: '確認送出' }).click();
-  // await page.getByRole('button', { name: '確認無誤' }).click();
-  // await page.getByRole('button', { name: '上傳身分證背面 在拍攝時請避免反光、模糊、陰影' }).setInputFiles('Users\ceneyhuang\Documents\Test\filesid-02.jpg');
-  // await page.getByRole('button', { name: '確認送出' }).click();
-  // await page.getByRole('button', { name: '上傳第二證件正面 在拍攝時請避免反光、模糊、陰影' }).setInputFiles('Users\ceneyhuang\Documents\Test\filesid-03.png');
-  // await page.getByRole('button', { name: '確認送出' }).click();
-  // await page.getByRole('button', { name: '下一步' }).click();
+  await page.getByRole('button', { name: '上傳身分證正面 在拍攝時請避免反光、模糊、陰影' }).setInputFiles('test-files/id-01.jpg');
+  await page.getByRole('button', { name: '確認送出' }).click();
+  await page.getByRole('button', { name: '確認無誤' }).click();
+  await page.getByRole('button', { name: '上傳身分證背面 在拍攝時請避免反光、模糊、陰影' }).setInputFiles('test-files/id-02.jpg');
+  await page.getByRole('button', { name: '確認送出' }).click();
+  await page.getByRole('button', { name: '上傳第二證件正面 在拍攝時請避免反光、模糊、陰影' }).setInputFiles('test-files/id-03.png');
+  await page.getByRole('button', { name: '確認送出' }).click();
+  await page.getByRole('button', { name: '下一步' }).click();
+
   await page.waitForTimeout(3000);
 
   await page.getByText('請選擇銀行').click();

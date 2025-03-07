@@ -1,11 +1,13 @@
 import { test, expect } from '@playwright/test';
+import { generateTaiwanID } from '../../utils/idGen';
 
 test('test', async ({ page }) => {
   test.setTimeout(150000);
   await page.goto('https://www.labpocket.tw/openaccountonline/oa/home?showYuShanBtn=Y&showSubBroBtn=Y&mkCode=MK0000&channel=CH0000&showRichartBtn=Y&show2h1Btn=Y');
   await page.getByRole('button', { name: '台股帳戶', exact: true }).click();
 
-  await page.getByPlaceholder('請輸入身分證字號').fill('D175337669');
+  const idCard = generateTaiwanID(); 
+  await page.getByPlaceholder('請輸入身分證字號').fill(idCard);
   await page.getByPlaceholder('YYYY-MM-DD').fill('1980-01-01');
   await page.getByPlaceholder('請輸入10碼手機號碼').fill('0900123456');
   await page.getByRole('button', { name: '傳送驗證碼' }).click();
