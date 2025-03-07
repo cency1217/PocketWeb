@@ -6,7 +6,6 @@ test('test', async ({ page }) => {
   await page.goto('https://www.labpocket.tw/openaccountonline/oa/home?showYuShanBtn=Y&showSubBroBtn=Y&mkCode=MK0000&channel=CH0000&showRichartBtn=Y&show2h1Btn=Y');
   await page.getByRole('button', { name: '台股＋美股複委託', exact: true }).click();
 
-  // 使用產生的身分證字號
   const idCard = generateTaiwanID(); 
   await page.getByPlaceholder('請輸入身分證字號').fill(idCard);
   await page.getByPlaceholder('YYYY-MM-DD').fill('1980-01-01');
@@ -27,15 +26,26 @@ test('test', async ({ page }) => {
   await page.getByText('我已閱讀個人資料使用同意書').click();
   await page.getByRole('button', { name: '我同意' }).click();
   await page.getByRole('button', { name: '開始申請' }).click();
-  await page.waitForTimeout(30000);
+  await page.waitForTimeout(3000);
 
-  await page.getByRole('button', { name: '上傳身分證正面 在拍攝時請避免反光、模糊、陰影' }).setInputFiles('test-files/id-01.jpg');
+  // 上傳身分證正面
+  await page.locator('#IDFRONT').setInputFiles('test-files/id-01.jpg');
   await page.getByRole('button', { name: '確認送出' }).click();
+  await page.waitForTimeout(3000);
+  // 處理彈窗：確認身分證資料
   await page.getByRole('button', { name: '確認無誤' }).click();
-  await page.getByRole('button', { name: '上傳身分證背面 在拍攝時請避免反光、模糊、陰影' }).setInputFiles('test-files/id-02.jpg');
+
+  // 上傳身分證背面
+  await page.locator('#IDBACK').setInputFiles('test-files/id-02.jpg');
   await page.getByRole('button', { name: '確認送出' }).click();
-  await page.getByRole('button', { name: '上傳第二證件正面 在拍攝時請避免反光、模糊、陰影' }).setInputFiles('test-files/id-03.png');
+  await page.waitForTimeout(3000);
+
+  // 上傳第二證件正面
+  await page.locator('#OTHERFRONT').setInputFiles('test-files/id-03.png');
   await page.getByRole('button', { name: '確認送出' }).click();
+  await page.waitForTimeout(3000);
+
+  // 下一步
   await page.getByRole('button', { name: '下一步' }).click();
 
   await page.waitForTimeout(3000);
@@ -47,10 +57,10 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: '我同意' }).click();
   await page.getByRole('button', { name: '下一步' }).click();
 
-  await page.waitForTimeout(15000);  
-  // await page.getByRole('button', { name: '上傳手持身分證照' }).setInputFiles('./MS/files/id-04.jpg');
-  // await page.getByRole('button', { name: '確認送出' }).click();
-  // await page.getByRole('button', { name: '下一步' }).click();
+  await page.locator('#SELFIE_WITH_ID').setInputFiles('test-files/id-01.jpg');
+  await page.getByRole('button', { name: '確認送出' }).click();
+  await page.waitForTimeout(1000);
+  await page.getByRole('button', { name: '下一步' }).click();
 
   await page.getByPlaceholder('請輸入戶名').fill('測試部二十二');
   await page.getByPlaceholder('民國年').fill('105');
@@ -105,5 +115,6 @@ test('test', async ({ page }) => {
   await page.getByText('本人已詳細審閱相關文件且明瞭同意全部內容，並一次簽訂各項契約及相關文件。同時本人對於所提供之資料其正確真實性負全責').click();
   await page.waitForTimeout(1500);
   await page.locator('div').filter({ hasText: '送出' }).nth(3).click();
+  await page.getByRole('button', { name: '仍要傳送' }).click();
 
 });
