@@ -1,7 +1,7 @@
 export const testData = {
   // 基本資料
   birthDate: '1980-01-01',
-  phoneNumber: '0933561715',
+  phoneNumber: '0900000000',
   
   // 個人資料
   name: '測試部二十一',
