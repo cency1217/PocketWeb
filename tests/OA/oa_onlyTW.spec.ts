@@ -109,11 +109,12 @@ async function agreeToFinalTerms(page: Page) {
   await page.getByRole('button', { name: '我同意' }).click();
 }
 
-test('oa_onlyTw', async ({ page }) => {
-  test.setTimeout(120000);
+test('台股開戶流程測試', async ({ page }) => {
+  test.setTimeout(testData.timeouts.test);
+  await page.setViewportSize(testData.viewport);
   
   // 進入開戶頁面
-  await page.goto('https://www.labpocket.tw/openaccountonline/oa/home?showYuShanBtn=Y&showSubBroBtn=Y&mkCode=MK0000&channel=CH0000&showRichartBtn=Y&show2h1Btn=Y');
+  await page.goto(testData.url);
   await page.getByRole('button', { name: '台股帳戶', exact: true }).click();
 
   // 填寫基本資料

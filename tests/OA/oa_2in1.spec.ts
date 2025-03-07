@@ -144,6 +144,7 @@ async function drawSignature(page: Page) {
 
 test('oa_2in1', async ({ page }) => {
   test.setTimeout(testData.timeouts.test);
+  await page.setViewportSize(testData.viewport);
   
   // 進入開戶頁面
   await page.goto(testData.url);

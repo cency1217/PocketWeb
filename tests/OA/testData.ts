@@ -53,6 +53,12 @@ export const testData = {
   // 網站設定
   url: 'https://www.labpocket.tw/openaccountonline/oa/home?showYuShanBtn=Y&showSubBroBtn=Y&mkCode=MK0000&channel=CH0000&showRichartBtn=Y&show2h1Btn=Y',
 
+  // 頁面設定
+  viewport: {
+    width: 1500,
+    height: 900
+  },
+
   // 等待時間設定
   timeouts: {
     standard: 3000,
