@@ -7,3 +7,4 @@ node_modules/
 auth.json
 webca.json
 .DS_Store
+captcha.png
