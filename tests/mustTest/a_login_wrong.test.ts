@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { getUser } from '../../utils/getUser' ;
+import { isUAT } from '../../utils/isUAT'
 
 test('pwd_wrong_hint', async ({ page }) => {
   test.slow();
@@ -8,7 +8,7 @@ test('pwd_wrong_hint', async ({ page }) => {
 
   await page.goto('');
   await page.getByRole('textbox', { name: '請輸入身分證字號' }).fill(USERNAME);
-  await page.locator('#password').fill('a12345678');
+  await page.locator('#password').fill(genPwd());
   await page.getByRole('textbox', { name: '請輸入驗證碼' }).click();
 
   //暫停輸入驗證碼
