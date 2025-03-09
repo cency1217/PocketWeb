@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test';
-import { generateTaiwanID } from '../utils/idGen';
+import { generateTaiwanID } from '../utils/genID';
 import { testData } from './oa_testData';
 
 export async function fillBasicInfo(page: Page) {

@@ -2,12 +2,12 @@ import { test, expect } from '@playwright/test';
 
 test.use({ storageState:'webca.json'});//使用登入狀態
 
-  // 保存並移除 sessionid cookie
+/*   // 保存並移除 sessionid cookie
   const cookies = await context.cookies();
   const sessionCookie = cookies.find(c => c.name === 'sessionid');
   if (sessionCookie) {
     await context.clearCookies([sessionCookie]);
-  }
+  } */
 
 test('忘記密碼＿有憑證', async ({ page }) => {
   test.slow(); //延長測試時間三倍 因收驗證簡訊需較久的操作
