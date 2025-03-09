@@ -1,6 +1,6 @@
 import { Page } from '@playwright/test';
-import { generateTaiwanID } from '../../utils/idGen';
-import { testData } from './testData';
+import { generateTaiwanID } from '../utils/idGen';
+import { testData } from './oa_testData';
 
 export async function fillBasicInfo(page: Page) {
   const idCard = generateTaiwanID();

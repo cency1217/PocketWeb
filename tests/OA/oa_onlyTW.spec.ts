@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { Page } from '@playwright/test';
-import { testData } from './testData';
+import { testData } from '../../test-files/oa_testData';
 import {
   fillBasicInfo,
   handleOTP,
@@ -10,7 +10,7 @@ import {
   setupBankAccount,
   fillPersonalInfo,
   fillInvestmentInfo,
-} from './common';
+} from '../../test-files/oa_common';
 
 async function agreeToFinalTerms(page: Page) {
   // 只需同意台股相關文件
