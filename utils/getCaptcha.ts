@@ -1,14 +1,12 @@
-import { Page, test } from '@playwright/test';
 import Tesseract from 'tesseract.js';
 
-export async function getCaptcha(page: Page) {
-  test.slow();
+export async function getCaptcha() {
   // 1. 前往需要驗證碼的網頁
-  await page.goto('' , {waitUntil: 'domcontentloaded'});
+/*   await page.goto('' , {waitUntil: 'domcontentloaded'});
 
   // 2. 擷取驗證碼圖片
   const captchaImage = await page.getByRole('img',{name:'captchaImage'});
-  await captchaImage.screenshot({ path: 'test-files/captcha.png' });
+  await captchaImage.screenshot({ path: 'test-files/captcha.png' }); */
 
  // 3. 使用 Tesseract.js 進行 OCR 辨識
   const { data: { text } } = await Tesseract.recognize('test-files/captcha.png', 'eng', {
