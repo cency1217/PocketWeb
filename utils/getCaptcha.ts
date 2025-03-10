@@ -1,6 +1,6 @@
 import Tesseract from 'tesseract.js';
 
-export async function getCaptcha() {
+export async function getCaptcha(path : string) {
   // 1. 前往需要驗證碼的網頁
 /*   await page.goto('' , {waitUntil: 'domcontentloaded'});
 

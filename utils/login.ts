@@ -1,5 +1,6 @@
 import { Page, test } from '@playwright/test';
 import { getUser } from './getUser';
+import { getCaptcha } from '../utils/getCaptcha';
 test.use({ storageState:'auth.json'});
 
 export async function login(page: Page) {
@@ -14,9 +15,13 @@ export async function login(page: Page) {
     console.log('需登入');
     await page.getByRole('textbox', { name: '請輸入身分證字號' }).fill(USERNAME);
     await page.locator('#password').fill(PASSWORD);
-    await page.locator('#password').press('Tab');
-  
-    await page.getByRole('textbox', { name: '請輸入驗證碼' }).click();
+
+    const captchaImage = await page.getByRole('img', { name: 'captchaImage' });
+    const imagePath = 'test-files/captcha.png';
+    await captchaImage.screenshot({ path: imagePath });
+    const captchaCode = await getCaptcha(imagePath);
+
+    await page.getByRole('textbox', { name: '請輸入驗證碼' }).fill(captchaCode);
     await page.waitForTimeout(10000); // 等待使用者輸入驗證碼
   
     await page.getByRole('button', { name: '登入' }).click();
