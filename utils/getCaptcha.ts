@@ -31,4 +31,6 @@ export async function getCaptcha(page: Page) {
     
     console.log('OCR 識別出的驗證碼:', captchaCode);
     return captchaCode;
+
+    // 要新增判斷若是驗證碼辨識有誤的話重走一次流程
 }
