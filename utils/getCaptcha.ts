@@ -1,36 +1,59 @@
 import Tesseract from 'tesseract.js';
 import { Page } from '@playwright/test';
+import { getPageConfig } from '../test-files/captchaConfig';
 
-async function getCaptchaImage(page: Page) {
-    const currentUrl = page.url();
+export async function getCaptcha(page: Page): Promise<string | false> {
+    let attempts = 0;
+    const maxAttempts = 3;
+    const imagePath = 'test-files/captcha.png';
     
-    let captchaImage;
+    const { submitButton, errorMessage, getCaptchaImage, handleError, handleSubmit } = getPageConfig(page.url());
     
-    if (currentUrl.includes('/wallet/')) {
-        captchaImage = await page.getByLabel('出款申請').getByRole('img');
-    } else if (currentUrl.includes('/account/settings/modify/')) {
-        captchaImage = await page.locator('form img');
-    } else {
-        // 預設或首頁
-        captchaImage = await page.getByRole('img', { name: 'captchaImage' });
+    while (attempts <= maxAttempts) {
+        // 重產驗證碼
+        if (attempts > 0) {
+            await page.getByRole('button', { name: '' }).click();
+            await page.waitForTimeout(500);
+        }
+
+        // 取得並辨識驗證碼
+        const captchaImage = await getCaptchaImage(page);
+        await captchaImage.screenshot({ path: imagePath });
+        const { data: { text } } = await Tesseract.recognize(imagePath, 'eng');
+        
+        // 處理驗證碼
+        let tempCode = text.replace(/\D/g, '').trim().substring(0, 5);
+
+        /* // 將最後一碼加1 驗證錯誤用
+        if (tempCode.length === 5) {
+            const lastDigit = parseInt(tempCode[4]);
+            tempCode = tempCode.substring(0, 4) + ((lastDigit + 1) % 10);
+        } */
+        
+        console.log('OCR 識別出的驗證碼:', tempCode);
+        
+        // 填入驗證碼並送出
+        await page.getByRole('textbox', { name: '請輸入驗證碼' }).fill(tempCode);
+        await page.getByRole('button', { name: submitButton }).click();
+
+        // 出款申請多一個確認彈窗
+        if (handleSubmit) await handleSubmit(page);
+
+        // 檢查驗證碼是否辨識錯誤
+        await page.waitForTimeout(500);
+        const errorCount = await page.getByText(errorMessage).count();
+        if (errorCount === 0) return tempCode;
+
+        // 出款申請及變更密碼驗證碼有誤 多一個彈窗
+        if (handleError) await handleError(page);
+
+        attempts++;
+        console.log(`驗證碼錯誤，第 ${attempts} 次重試`);
+        if (attempts > maxAttempts) {
+            console.log('已達最大重試次數');
+            return false;
+        }
     }
     
-    return captchaImage;
-}
-
-export async function getCaptcha(page: Page) {
-    const imagePath = 'test-files/captcha.png';
-    const captchaImage = await getCaptchaImage(page);
-    await captchaImage.screenshot({ path: imagePath });
-    
-    // OCR 辨識
-    const { data: { text } } = await Tesseract.recognize(imagePath, 'eng');
-    
-    // 過濾非數字
-    const captchaCode = text.replace(/\D/g, '').trim().substring(0, 5);
-    
-    console.log('OCR 識別出的驗證碼:', captchaCode);
-    return captchaCode;
-
-    // 要新增判斷若是驗證碼辨識有誤的話重走一次流程
+    return false;
 }

@@ -24,11 +24,11 @@ export async function webca(page: Page) {
         await page.getByText('申請', { exact: true }).click();
         const page1 = await page1Promise;
         
-        await page1.locator('iframe[name="iFR"]').contentFrame().getByPlaceholder('20010203').fill(BIRTHDAY);
-        await page1.locator('iframe[name="iFR"]').contentFrame().getByRole('button', { name: '驗證並發送簡訊驗證碼' }).click();
+        await page1.getByPlaceholder('20010203').fill(BIRTHDAY);
+        await page1.getByRole('button', { name: '驗證並發送簡訊驗證碼' }).click();
         await page1.getByPlaceholder('請輸入驗證碼').click();
         await page.waitForTimeout(15000);
-        await page1.locator('iframe[name="iFR"]').contentFrame().getByRole('button', { name: '確定' }).click();
+        await page1.getByRole('button', { name: '確定' }).click();
         
         await page1.getByLabel('我已閱讀並同意憑證作業條款').check();
         await page1.waitForTimeout(500);
