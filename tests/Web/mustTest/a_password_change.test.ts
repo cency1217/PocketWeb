@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
-import { webca } from '../../utils/webca'
-import { getUser } from '../../utils/getUser'
-import { genPwd } from '../../utils/genPwd'
+import { webca } from '../../../utils/webca'
+import { getUser } from '../../../utils/getUser'
+import { genPwd } from '../../../utils/genPwd'
 
 test.use({ storageState:'webca.json'});
 
@@ -14,7 +14,7 @@ test('(登入)密碼變更', async ({ page }) => {
 
   const { USERNAME , PASSWORD } = await getUser(page);
   await page.getByPlaceholder('請輸入舊/補發密碼').fill(PASSWORD); 
-  const { newPwd } = genPwd();
+  const newPwd = genPwd();
   await page.getByPlaceholder('請輸入新密碼').fill(newPwd); 
   await page.getByPlaceholder('請再次輸入新密碼').fill('');
   await page.waitForTimeout(10000); //暫停輸入驗證碼
