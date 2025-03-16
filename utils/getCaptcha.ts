@@ -7,7 +7,7 @@ export async function getCaptcha(page: Page): Promise<string | false> {
     const maxAttempts = 3;
     const imagePath = 'test-files/captcha.png';
     
-    const { submitButton, errorMessage, getCaptchaImage, handleError, handleSubmit } = getPageConfig(page.url());
+    const { submitButton, errorMessage, getCaptchaImage, handleError, handleSubmit, fillCaptcha } = getPageConfig(page.url());
     
     while (attempts <= maxAttempts) {
         // 重產驗證碼
@@ -33,7 +33,7 @@ export async function getCaptcha(page: Page): Promise<string | false> {
         console.log('OCR 識別出的驗證碼:', tempCode);
         
         // 填入驗證碼並送出
-        await page.getByRole('textbox', { name: '請輸入驗證碼' }).fill(tempCode);
+        await fillCaptcha(page, tempCode);
         await page.getByRole('button', { name: submitButton }).click();
 
         // 出款申請多一個確認彈窗

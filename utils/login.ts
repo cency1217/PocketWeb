@@ -21,7 +21,12 @@ export async function login(page: Page) {
         throw new Error('驗證碼辨識失敗');
     }
 
-    await page.waitForTimeout(5000);
+    const errorMessage = await page.getByText('* 帳號或密碼有誤，請再次確認').count();
+    if (errorMessage > 0) {
+        throw new Error('帳號或密碼有誤');
+    }
+
+    await page.waitForTimeout(3000);
     await page.context().storageState({ path: 'auth.json' });
   } else{
     console.log('不需登入');
