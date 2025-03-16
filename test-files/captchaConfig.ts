@@ -1,3 +1,5 @@
+import { Page } from "@playwright/test";
+
 interface PageConfig {
     submitButton: string;
     errorMessage: string;
