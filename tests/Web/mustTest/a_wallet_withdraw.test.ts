@@ -5,7 +5,7 @@ import { getCaptcha } from '../../../utils/getCaptcha';
 //使用登入狀態
 test.use({ storageState:'webca.json'});
 
-test('口袋錢包出款申請', async ({ page }) => {
+test('withdraw', async ({ page }) => {
   test.slow();
   await webca(page);
   await page.goto('/wallet/');
