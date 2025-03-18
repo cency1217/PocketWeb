@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { webca } from '@utils/auth/webca'
 import { getUser } from '@utils/auth/getUser'
-import { getCaptcha } from '@utils/auth/getCaptcha'
+import { getCaptcha } from '@utils/captcha/getCaptcha'
 import { genPwd } from '@utils/helper/genPwd'
 
 test.use({ storageState:'webca.json'});

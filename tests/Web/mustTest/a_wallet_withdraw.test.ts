@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { webca } from '@utils/auth/webca';
-import { getCaptcha } from '@utils/auth/getCaptcha';
+import { getCaptcha } from '@utils/captcha/getCaptcha';
 
 //使用登入狀態
 test.use({ storageState:'webca.json'});

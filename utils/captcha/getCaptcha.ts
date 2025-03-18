@@ -1,4 +1,4 @@
-import * as Tesseract from 'tesseract.js';
+import { createWorker } from 'tesseract.js';
 import { Page } from '@playwright/test';
 import { getPageConfig } from '../../test-files/captchaConfig';
 
@@ -17,9 +17,12 @@ export async function getCaptcha(page: Page): Promise<string | false> {
         }
 
         // 取得並辨識驗證碼
+        const imagePath = 'captcha.png';
         const captchaImage = await getCaptchaImage(page);
         await captchaImage.screenshot({ path: imagePath });
-        const { data: { text } } = await Tesseract.recognize(imagePath, 'eng');
+        const worker = await createWorker('eng');
+        const { data: { text } } = await worker.recognize(imagePath);
+        await worker.terminate();
         
         // 處理驗證碼
         let tempCode = text.replace(/\D/g, '').trim().substring(0, 5);

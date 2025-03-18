@@ -1,6 +1,6 @@
 import { Page, test } from '@playwright/test';
-import { getUser } from './getUser';
-import { getCaptcha } from './getCaptcha';
+import { getUser } from '@utils/auth/getUser';
+import { getCaptcha } from '@utils/captcha/getCaptcha';
 test.use({ storageState:'auth.json'});
 
 export async function login(page: Page) {
