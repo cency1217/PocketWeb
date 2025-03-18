@@ -1,7 +1,15 @@
 import * as fs from 'fs';
+import { test } from '@playwright/test';
 
 export function updateEnvFile(key: string, value: string) {
-    const envPath = '.env';
+    const baseURL = test.info().project.use.baseURL || '';
+    const isUAT = baseURL.includes('labpocket');
+    if (isUAT) {
+      key = `uat_${key}`;
+    }
+
+
+    const envPath = './config/env/.env';
     let envContent = fs.readFileSync(envPath, 'utf-8');
   
     // 使用正則表達式找到變數，然後替換它的值

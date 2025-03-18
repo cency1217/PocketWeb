@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import { webca } from '@utils/auth/webca'
 import { getUser } from '@utils/auth/getUser'
 import { getCaptcha } from '@utils/captcha/getCaptcha'
@@ -22,7 +22,6 @@ test('pwd_change', async ({ page }) => {
       throw new Error('驗證碼辨識失敗');
   }
 
-  await page.getByRole('button', { name: '確認' }).click();
   await page.getByRole('button', { name: '前往首頁' }).click();
 
   await page.getByRole('textbox', { name: '請輸入身分證字號' }).fill(USERNAME);
@@ -33,7 +32,10 @@ test('pwd_change', async ({ page }) => {
       throw new Error('驗證碼辨識失敗');
   }
 
-  await page.getByRole('button', { name: '登入' }).click();
+  await page.goto('');
+  
+  await page.locator('a').filter({ hasText: '帳務' }).first().hover();
+  await page.locator('#mainSection').getByRole('link', { name: '口袋錢包' }).click();
 
   // 將新密碼寫入 .env 檔案
   await import('@utils/helper/envWrite').then(({ updateEnvFile }) => {
