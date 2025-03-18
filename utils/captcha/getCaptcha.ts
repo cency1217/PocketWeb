@@ -1,11 +1,11 @@
 import { createWorker } from 'tesseract.js';
 import { Page } from '@playwright/test';
-import { getPageConfig } from '../../test-files/captchaConfig';
+import { getPageConfig } from '@utils/captcha/captchaConfig';
 
 export async function getCaptcha(page: Page): Promise<string | false> {
     let attempts = 0;
     const maxAttempts = 3;
-    const imagePath = 'test-files/captcha.png';
+    const imagePath = 'captcha.png';
     
     const { submitButton, errorMessage, getCaptchaImage, handleError, handleSubmit, fillCaptcha } = getPageConfig(page.url());
     
@@ -17,7 +17,6 @@ export async function getCaptcha(page: Page): Promise<string | false> {
         }
 
         // 取得並辨識驗證碼
-        const imagePath = 'captcha.png';
         const captchaImage = await getCaptchaImage(page);
         await captchaImage.screenshot({ path: imagePath });
         const worker = await createWorker('eng');
