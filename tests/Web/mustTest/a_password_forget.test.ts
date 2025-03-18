@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { webca } from '../../../utils/auth/webca';
-import { getUser } from '../../../utils/auth/getUser';
+import { webca } from '@utils/auth/webca';
+import { getUser } from '@utils/auth/getUser';
 
 test.use({ storageState:'webca.json'});//使用登入狀態
 

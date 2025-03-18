@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { getUser } from '../../../utils/getUser';
-import { getCaptcha } from '../../../utils/getCaptcha';
+import { getUser } from '@utils/auth/getUser';
+import { getCaptcha } from '@utils/auth/getCaptcha';
 
 test('pwd_unlock', async ({ page }) => {
   test.slow();

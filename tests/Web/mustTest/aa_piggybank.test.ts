@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { webca } from '../../../utils/webca'
+import { webca } from '@utils/auth/webca'
 
 test('test', async ({ page }) => {
   await webca(page);
