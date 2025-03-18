@@ -1,61 +1,43 @@
 import { createWorker } from 'tesseract.js';
 import { Page } from '@playwright/test';
-import { getPageConfig } from '@utils/captcha/captchaConfig';
 
-export async function getCaptcha(page: Page): Promise<string | false> {
-    let attempts = 0;
+/**
+ * 辨識驗證碼圖片
+ * @throws {Error} 當驗證碼辨識失敗時拋出錯誤
+ */
+export async function getCaptcha(page: Page): Promise<string> {
+    const CAPTCHA_LENGTH = 5;
+    const DIGIT_REGEX = /[0-9]/g;
     const maxAttempts = 3;
     const imagePath = 'captcha.png';
     
-    const { submitButton, errorMessage, getCaptchaImage, handleError, handleSubmit, fillCaptcha } = getPageConfig(page.url());
-    
-    while (attempts <= maxAttempts) {
+    for (let attempt = 0; attempt <= maxAttempts; attempt++) {
         // 重產驗證碼
-        if (attempts > 0) {
-            await page.getByRole('button', { name: '' }).click();
+        if (attempt > 0) {
+            await page.getByRole('button', { name: '' }).click();
             await page.waitForTimeout(500);
         }
 
         // 取得並辨識驗證碼
-        const captchaImage = await getCaptchaImage(page);
+        const captchaImage = await page.locator('#captchaImage');
         await captchaImage.screenshot({ path: imagePath });
+
         const worker = await createWorker('eng');
         const { data: { text } } = await worker.recognize(imagePath);
         await worker.terminate();
         
-        // 處理驗證碼
-        let tempCode = text.replace(/\D/g, '').trim().substring(0, 5);
-
-        /* // 將最後一碼加1 驗證錯誤用
-        if (tempCode.length === 5) {
-            const lastDigit = parseInt(tempCode[4]);
-            tempCode = tempCode.substring(0, 4) + ((lastDigit + 1) % 10);
-        } */
+        // 只保留數字並取前5碼
+        const digits = text.match(DIGIT_REGEX)?.join('') || '';
+        const captchaCode = digits.substring(0, CAPTCHA_LENGTH);
         
-        console.log('OCR 識別出的驗證碼:', tempCode);
+        console.log('OCR 識別出的驗證碼:', captchaCode);
         
-        // 填入驗證碼並送出
-        await fillCaptcha(page, tempCode);
-        await page.getByRole('button', { name: submitButton }).click();
-
-        // 出款申請多一個確認彈窗
-        if (handleSubmit) await handleSubmit(page);
-
-        // 檢查驗證碼是否辨識錯誤
-        await page.waitForTimeout(500);
-        const errorCount = await page.getByText(errorMessage).count();
-        if (errorCount === 0) return tempCode;
-
-        // 出款申請及變更密碼驗證碼有誤 多一個彈窗
-        if (handleError) await handleError(page);
-
-        attempts++;
-        console.log(`驗證碼錯誤，第 ${attempts} 次重試`);
-        if (attempts > maxAttempts) {
-            console.log('已達最大重試次數');
-            return false;
+        if (captchaCode.length === CAPTCHA_LENGTH) {
+            return captchaCode;
         }
+
+        console.log(`驗證碼辨識失敗（第 ${attempt + 1} 次嘗試）`);
     }
-    
-    return false;
+
+    throw new Error('驗證碼辨識失敗，已達最大重試次數');
 }
