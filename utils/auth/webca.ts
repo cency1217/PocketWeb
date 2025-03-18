@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 import { Page, test ,expect } from '@playwright/test';
 import { login } from '@utils/auth/login';
 import { getUser } from '@utils/auth/getUser';

@@ -1,4 +1,4 @@
-import Tesseract from 'tesseract.js';
+import * as Tesseract from 'tesseract.js';
 import { Page } from '@playwright/test';
 import { getPageConfig } from '../../test-files/captchaConfig';
 
