@@ -36,7 +36,7 @@ test('pwd_change', async ({ page }) => {
   await page.getByRole('button', { name: '登入' }).click();
 
   // 將新密碼寫入 .env 檔案
-  await import('../../../utils/envWrite').then(({ updateEnvFile }) => {
+  await import('@utils/helper/envWrite').then(({ updateEnvFile }) => {
     updateEnvFile('password', newPwd);
   });
 
