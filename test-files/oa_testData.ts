@@ -44,10 +44,10 @@ export const testData = {
 
   // 檔案路徑
   files: {
-    idFront: 'test-files/id-01.jpg',
-    idBack: 'test-files/id-02.jpg',
-    secondaryId: 'test-files/id-03.png',
-    selfieWithId: 'test-files/id-04.jpg'
+    idFront: 'test-files/oa_id-01.jpg',
+    idBack: 'test-files/oa_id-02.jpg',
+    secondaryId: 'test-files/oa_id-03.png',
+    selfieWithId: 'test-files/oa_id-04.jpg'
   },
 
   // 網站設定
