@@ -35,7 +35,7 @@ test('pwd_change', async ({ page }) => {
   await page.goto('');
   
   await page.locator('a').filter({ hasText: '帳務' }).first().hover();
-  await page.locator('#mainSection').getByRole('link', { name: '口袋錢包' }).click();
+  await page.locator('#mainSection a').filter({ hasText: /^口袋錢包$/ }).click();
 
   // 將新密碼寫入 .env 檔案
   await import('@utils/helper/envWrite').then(({ updateEnvFile }) => {
