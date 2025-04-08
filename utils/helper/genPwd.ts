@@ -4,8 +4,8 @@ export function genPwd(): string {
     const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const numbers = '0123456789';
     
-    // 隨機長度 (8-16)
-    const length = Math.floor(Math.random() * 9) + 8;
+    // 隨機長度 (8-10)
+    const length = Math.floor(Math.random() * 3) + 8;
     
     // 確保至少包含一個小寫字母、一個大寫字母和一個數字
     let password = [
