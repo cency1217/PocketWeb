@@ -18,7 +18,9 @@ export function generateTaiwanID(): string {
     }
     const checkDigit = (10 - (checksum % 10)) % 10;
     
-    return `${firstLetter}${gender}${numbers.join('')}${checkDigit}`;
-}
-
-console.log('身分證字號',generateTaiwanID());
+    // 將身分證字號組合存入變數
+    const idNumber = `${firstLetter}${gender}${numbers.join('')}${checkDigit}`;
+    console.log('生成的身分證字號:', idNumber);
+    
+    return idNumber;
+};
