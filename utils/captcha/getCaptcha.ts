@@ -5,7 +5,7 @@ import { getPageConfig } from '@utils/captcha/captchaConfig';
 export async function getCaptcha(page: Page): Promise<string | false> {
     let attempts = 0;
     const maxAttempts = 3;
-    const imagePath = 'captcha.png';
+    const imagePath = './utils/captcha/captcha.png';
     
     const { submitButton, errorMessage, getCaptchaImage, handleError, handleSubmit, fillCaptcha } = getPageConfig(page.url());
     
