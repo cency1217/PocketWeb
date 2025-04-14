@@ -3,7 +3,7 @@ import { webca } from '@utils/auth/webca';
 import { getCaptcha } from '@utils/captcha/getCaptcha';
 
 //使用登入狀態
-test.use({ storageState:'webca.json'});
+test.use({ storageState:'./utils/auth/webca.json'});
 
 test('withdraw', async ({ page }) => {
   test.slow();

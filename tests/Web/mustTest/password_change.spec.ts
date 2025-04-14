@@ -4,7 +4,7 @@ import { getUser } from '@utils/auth/getUser'
 import { getCaptcha } from '@utils/captcha/getCaptcha'
 import { genPwd } from '@utils/helper/genPwd'
 
-test.use({ storageState:'webca.json'});
+test.use({ storageState:'./utils/auth/webca.json'});
 
 test('pwd_change', async ({ page }) => {
   test.slow(); 

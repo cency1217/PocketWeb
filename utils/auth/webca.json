@@ -1,0 +1,258 @@
+{
+  "cookies": [
+    {
+      "name": "MUID",
+      "value": "2EF30F2F15566F1D3EF81A9E14466E54",
+      "domain": ".bing.com",
+      "path": "/",
+      "expires": 1777821423.645782,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SRM_B",
+      "value": "2EF30F2F15566F1D3EF81A9E14466E54",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1778339474.853941,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MUID",
+      "value": "2EF30F2F15566F1D3EF81A9E14466E54",
+      "domain": ".clarity.ms",
+      "path": "/",
+      "expires": 1777821422.767802,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "refresh",
+      "value": "undefined",
+      "domain": "www.pocket.tw",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "is_system_password",
+      "value": "undefined",
+      "domain": "www.pocket.tw",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Secure-JSESSIONID",
+      "value": "314A99A14F075DD7CECD1293CD7662B2",
+      "domain": "www.pocket.tw",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUlgTtuvapH2Tvnw_8PsBFByjy3fTkpLu2_vc-JhFhuCN5N_VfzFakAzXWMH",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1778685413.750871,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1744730223.645904,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": 1744730222.767843,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.343897796.1744643470",
+      "domain": ".pocket.tw",
+      "path": "/",
+      "expires": 1744730892,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "CLID",
+      "value": "d5bbfee4cef444e5ac70346cda4e9672.20250316.20260414",
+      "domain": "www.clarity.ms",
+      "path": "/",
+      "expires": 1776179469.975735,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_clck",
+      "value": "17rbt4r%7C2%7Cfv2%7C0%7C1901",
+      "domain": ".pocket.tw",
+      "path": "/",
+      "expires": 1776179470,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "SM",
+      "value": "C",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_gat_UA-228000152-4",
+      "value": "1",
+      "domain": ".pocket.tw",
+      "path": "/",
+      "expires": 1744644542,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_clsk",
+      "value": "1j16ewy%7C1744644483180%7C6%7C1%7Cq.clarity.ms%2Fcollect",
+      "domain": ".pocket.tw",
+      "path": "/",
+      "expires": 1744730883,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "csrftoken",
+      "value": "cpphqI0dBYatBOi3EMh6thBeY5p4xCE0FxqQte7mlDwAylJdPdJ25aKaKpZyqWFk",
+      "domain": "www.pocket.tw",
+      "path": "/",
+      "expires": 1776094091.858307,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sessionid",
+      "value": "ujl9h07x93xdrhaksphnpklehvf4efvy",
+      "domain": "www.pocket.tw",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "token",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0NzMwODg4LCJqdGkiOiIxZGI1NGUzNWFiZDA0NWIzYTdkOGNlM2VjMDAzNzE2YSIsInVzZXJfdXNlcm5hbWUiOiJYRDdwYVh6WmJNIn0.PU7wHNPpcN1mCPFnBPRtMWofwifVWAtgnMd8xmsXm3c",
+      "domain": "www.pocket.tw",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.2.1502334637.1742126589",
+      "domain": ".pocket.tw",
+      "path": "/",
+      "expires": 1779204492.055405,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_R10T7CT0E6",
+      "value": "GS1.1.1744643469.8.1.1744644492.49.0.0",
+      "domain": ".pocket.tw",
+      "path": "/",
+      "expires": 1779204492.074187,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_1Z1N25W2Q1",
+      "value": "GS1.1.1744643469.8.1.1744644492.49.0.0",
+      "domain": ".pocket.tw",
+      "path": "/",
+      "expires": 1779204492.81206,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.pocket.tw",
+      "localStorage": [
+        {
+          "name": "TWCACertIdxRef",
+          "value": "{\"TWCA1742126627897\":{\"cn\":\"B222790712-00-00::HMC050\",\"issuer\":\"C=TW, O=TAIWAN-CA.COM Inc., OU=Certification Service Provider, CN=TaiCA Secure CA\",\"subject\":\"C=TW, O=TaiCA Secure CA, O=Certification Service Provider, OU=RA-POCKET, OU=MIS, CN=B222790712-00-00::HMC050, E=@@\",\"serial\":\"5263385A\",\"notBefore\":\"20250316200347\",\"notAfter\":\"20260316235959\"}}"
+        },
+        {
+          "name": "TWCA1742126627897",
+          "value": "{\"cn\":\"B222790712-00-00::HMC050\",\"issuer\":\"C=TW, O=TAIWAN-CA.COM Inc., OU=Certification Service Provider, CN=TaiCA Secure CA\",\"subject\":\"C=TW, O=TaiCA Secure CA, O=Certification Service Provider, OU=RA-POCKET, OU=MIS, CN=B222790712-00-00::HMC050, E=@@\",\"serial\":\"5263385A\",\"notBefore\":\"20250316200347\",\"notAfter\":\"20260316235959\",\"cs\":\"\",\"certb64\":\"MIIElzCCA3+gAwIBAgIEUmM4WjANBgkqhkiG9w0BAQUFADBtMQswCQYDVQQGEwJUVzEbMBkGA1UEChMSVEFJV0FOLUNBLkNPTSBJbmMuMScwJQYDVQQLEx5DZXJ0aWZpY2F0aW9uIFNlcnZpY2UgUHJvdmlkZXIxGDAWBgNVBAMTD1RhaUNBIFNlY3VyZSBDQTAeFw0yNTAzMTYxMjAzNDdaFw0yNjAzMTYxNTU5NTlaMIGoMQswCQYDVQQGEwJUVzEYMBYGA1UEChMPVGFpQ0EgU2VjdXJlIENBMScwJQYDVQQKEx5DZXJ0aWZpY2F0aW9uIFNlcnZpY2UgUHJvdmlkZXIxEjAQBgNVBAsTCVJBLVBPQ0tFVDEMMAoGA1UECxMDTUlTMSEwHwYDVQQDExhCMjIyNzkwNzEyLTAwLTAwOjpITUMwNTAxETAPBgkqhkiG9w0BCQEWAkBAMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtKi6VsUfkrpTpvxQbPziC8f5ByhjOjgp+MbIYUA6DdfiS2uEhiCR/9HHXBpjnV2CUsowsAfJKXzOSS0T5w1aYNfEBuszD0LSoUUcUeWkUDqY1027G43sEkmNyqa8oUsq9Ut6OJEIpVhf3qOhQjlPdACiKAcY0v1SQFz+foFP5H8AEzYpCc5AguEc5nyjW7LRU8vkGzXyWALDabdLbJcN+mVrttGQM3BYkv/wV9oeBt7xvs+wYI758OwM9AvEVT6v+pIQJZd4FWzQ9ceOqdDZDoIKUaYhoBbrSGSpfEE4UyhYXGMd0vBgh1OvZ3/3F3VOcp+gSkXOEQWSONSM3QrnfQIDAQABo4IBATCB/jAfBgNVHSMEGDAWgBTAshkS0soHqML9TLZBh7T/ow73tzAdBgNVHQ4EFgQUMW7PruX6sm2VI5IMP9Y9+WdJabUwSAYDVR0fBEEwPzA9oDugOYY3aHR0cDovL2l0YXgudHdjYS5jb20udHcvZWNwbHVzL2VjcGx1c19VQ0FfMjAxOF9zaGExLmNybDBXBgNVHSAEUDBOMEwGB2CGdgMBAwEwQTAbBggrBgEFBQcCARYPd3d3LnR3Y2EuY29tLnR3MCIGCCsGAQUFBwICMBYaFFJlc3RyaWN0aW9uID0zLjIuMi4xMAkGA1UdEwQCMAAwDgYDVR0PAQH/BAQDAgTwMA0GCSqGSIb3DQEBBQUAA4IBAQCeqeeknBrdsh1l+lMxGXT+fpr3v6UFBs4cZdBH3Lu5ow0jgLdvRCrjo6aD7qFsCOJder9nPpIyeuQWiAUjpN3MH2JjCMSoIuN15ITTv7OvfOflJ7oBjoLdnzHol/NlSbwM2uCtXHHUxQQLp3Eblc/jW1xQ+nA5xfNJGclkPvtyFvNOhNWiY7w66SOduYBpcMsJejANV/PIqlAJXsqhzisRx1mGjmHt47ejBo02WwS0VNOV6mguBEe47Ma3gK5ctDZZZc/7KuFdlweamKFc5yyWHJgO0hr44ifogtgwCckicuGNg4P92AntnEQJfxCkKMpnlBp5wtlLKq+2yNUlVE7h\",\"b64P12Cert\":\"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\",\"certfinger\":\"958aa1f8a87b15407c3f6cca7a281098e297a7ae\"}"
+        },
+        {
+          "name": "TWCAAccountUqiDeviceID",
+          "value": "{\"B222790712\":\"85914763-4643-0db1-69c4-dfe402765736-1742126626497\"}"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.youtube-nocookie.com",
+      "localStorage": [
+        {
+          "name": "yt.innertube::nextId",
+          "value": "{\"data\":126,\"expiration\":1744730892123,\"creation\":1744644492123}"
+        },
+        {
+          "name": "yt-remote-connected-devices",
+          "value": "{\"data\":\"[]\",\"expiration\":1744730887303,\"creation\":1744644487303}"
+        },
+        {
+          "name": "ytidb::LAST_RESULT_ENTRY_KEY",
+          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1747236486306,\"creation\":1744644486306}"
+        },
+        {
+          "name": "yt.innertube::requests",
+          "value": "{\"data\":{\"117\":{\"method\":\"log_event\",\"request\":{\"context\":{\"client\":{\"hl\":\"en\",\"gl\":\"TW\",\"clientName\":56,\"clientVersion\":\"1.20250402.01.00\",\"configInfo\":{\"appInstallData\":\"CITT9L8GEOyDgBMQi4KAExCF284cEMn3rwUQ29rOHBCD7s4cEN68zhwQgc3OHBDM364FEL22rgUQlP6wBRDJ5rAFEO_szhwQntCwBRDjg7giEN-4zhwQ6-j-EhC-irAFELjkzhwQzP3OHBD6hc8cELnZzhwQ7d7OHBC36v4SEL2ZsAUQ0-GvBRD8ss4cEIiHsAUQ8ZywBRCI468FEPDizhwQ5Of_EhCwhs8cEParsAUQibDOHBCJp84cEMWBzxwQu9nOHBDs3c4cEKPvzhwQntvOHBCHrM4cEPLWzhwQ-KuxBRCa9M4cEN_czhwQmZixBRCz6c4cEKb9zhwQ4OD_EhCZjbEFEJ35zhwQ_dXOHBDnhs8cEJv8_xIQm_jOHCokQ0FNU0ZSVVctWnEtREpTQ0V0WFM2Z3Y1N0FQSjNBVWRCdz09\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\",\"connectionType\":\"CONN_CELLULAR_4G\",\"rolloutToken\":\"CLr159zSgIqYrgEQuOKeluvXjAMYuOKeluvXjAM%3D\",\"browserName\":\"Chrome\",\"deviceMake\":\"apple\",\"browserVersion\":\"134.0.0.0\",\"osName\":\"Macintosh\",\"osVersion\":\"10_15_7\",\"platform\":\"DESKTOP\"}},\"events\":[{\"eventTimeMs\":1744644491892,\"latencyActionTicked\":{\"tickName\":\"qoes\",\"clientActionNonce\":\"CPu2OjKa6_IY9yMm\"},\"context\":{\"lastActivityMs\":\"5315\"}},{\"eventTimeMs\":1744644491898,\"latencyActionTicked\":{\"tickName\":\"mesv_s\",\"clientActionNonce\":\"CPu2OjKa6_IY9yMm\"},\"context\":{\"lastActivityMs\":\"5321\"}},{\"eventTimeMs\":1744644491899,\"finalPayload\":{\"csn\":\"zO0LrG86drtarwR7\"},\"context\":{\"lastActivityMs\":\"5322\"}}],\"serializedClientEventId\":{\"serializedEventId\":\"hCn9Z8WJNaqyms0P_7rqwAw\",\"clientCounter\":\"17009\"}},\"authState\":{\"X-Goog-Visitor-Id\":\"CgtzeHVGT0ZrY2RzZyiE0_S_BjIKCgJUVxIEGgAgKQ%3D%3D\"},\"requestTime\":1744644491899},\"118\":{\"method\":\"log_event\",\"request\":{\"context\":{\"client\":{\"hl\":\"en\",\"gl\":\"TW\",\"clientName\":56,\"clientVersion\":\"1.20250402.01.00.if6\",\"configInfo\":{\"appInstallData\":\"CITT9L8GEJr0zhwQvbauBRD1_v8SEKb9zhwQmY2xBRCIh7AFEImnzhwQ-oXPHBCJsM4cEPDszhwQ_LLOHBC9irAFEL2ZsAUQ7v3OHBDT4a8FEMnmsAUQiOOvBRDz1s4cEPGcsAUQo-_OHBC52c4cEO3ezhwQ8OLOHBCe0LAFEPirsQUQntvOHBDFgc8cEOfjzhwQ9YaxBRC45M4cELvZzhwQh6zOHBDevM4cEMn3rwUQ_fP_EhDM_c4cEParsAUQ29rOHBCe-c4cEMzfrgUQmZixBRCD7s4cEOTn_xIQ4OD_EhDs3c4cEN64zhwQ39zOHBCU_rAFEIHNzhwQ3f3OHBCz6c4cEOODuCIQ6-j-EhC36v4SEPSGzxwQk4jPHCokQ0FNU0ZSVVctWnEtREpTQ0V0WFM2Z3Y1N0FQSjNBVWRCdz09\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\",\"connectionType\":\"CONN_CELLULAR_4G\",\"rolloutToken\":\"CLqR0ty8mc6UnQEQqu6QluvXjAMYqu6QluvXjAM%3D\",\"browserName\":\"Chrome\",\"deviceMake\":\"apple\",\"browserVersion\":\"134.0.0.0\",\"osName\":\"Macintosh\",\"osVersion\":\"10_15_7\",\"platform\":\"DESKTOP\"}},\"events\":[{\"eventTimeMs\":1744644491921,\"latencyActionTicked\":{\"tickName\":\"qoes\",\"clientActionNonce\":\"3qda7r-qljrTpXlF\"},\"context\":{\"lastActivityMs\":\"5297\"}},{\"eventTimeMs\":1744644491926,\"latencyActionTicked\":{\"tickName\":\"mesv_s\",\"clientActionNonce\":\"3qda7r-qljrTpXlF\"},\"context\":{\"lastActivityMs\":\"5302\"}},{\"eventTimeMs\":1744644491927,\"finalPayload\":{\"csn\":\"_iFuxwmf8zqwfPta\"},\"context\":{\"lastActivityMs\":\"5303\"}}],\"serializedClientEventId\":{\"serializedEventId\":\"hCn9Z_2QJ8eW7OsPycHZyQY\",\"clientCounter\":\"25983\"}},\"authState\":{\"X-Goog-Visitor-Id\":\"Cgs5NncydlhpbUN3ayiE0_S_BjIKCgJUVxIEGgAgLg%3D%3D\"},\"requestTime\":1744644491927},\"119\":{\"method\":\"log_event\",\"request\":{\"context\":{\"client\":{\"hl\":\"en\",\"gl\":\"TW\",\"clientName\":56,\"clientVersion\":\"1.20250402.01.00\",\"configInfo\":{\"appInstallData\":\"CITT9L8GEJ3QsAUQmY2xBRD4q7EFEODczhwQvYqwBRD2q7AFEPDizhwQ8OzOHBCm_c4cEIiHsAUQ_LLOHBCD7s4cEMzfrgUQiOOvBRCJp84cELPpzhwQ5Of_EhDr6P4SENvazhwQ44O4IhDz1s4cEMnmsAUQmvTOHBDevM4cEJ35zhwQh6zOHBDJ968FEJmYsQUQ7d7OHBC72c4cEN64zhwQuOTOHBCU_rAFEMSBzxwQ5uPOHBDs3c4cEKTvzhwQ4OD_EhCJsM4cEL2ZsAUQt-r-EhC9tq4FEJ7bzhwQzP3OHBDT4a8FEN79zhwQgc3OHBCCg7giELnZzhwQ-oXPHBDnhs8cKiRDQU1TRlJVVy1acS1ESlNDRXRYUzZndjU3QVBKM0FVZEJ3PT0%3D\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\",\"connectionType\":\"CONN_CELLULAR_4G\",\"rolloutToken\":\"CKOzqaWW-aHVOxCc66WW69eMAxic66WW69eMAw%3D%3D\",\"browserName\":\"Chrome\",\"deviceMake\":\"apple\",\"browserVersion\":\"134.0.0.0\",\"osName\":\"Macintosh\",\"osVersion\":\"10_15_7\",\"platform\":\"DESKTOP\"}},\"events\":[{\"eventTimeMs\":1744644491951,\"latencyActionTicked\":{\"tickName\":\"qoes\",\"clientActionNonce\":\"aP8Ecd16CVg1iQV1\"},\"context\":{\"lastActivityMs\":\"5517\"}},{\"eventTimeMs\":1744644491956,\"latencyActionTicked\":{\"tickName\":\"mesv_s\",\"clientActionNonce\":\"aP8Ecd16CVg1iQV1\"},\"context\":{\"lastActivityMs\":\"5522\"}},{\"eventTimeMs\":1744644491957,\"finalPayload\":{\"csn\":\"afcwFN_MjTpv0ye0\"},\"context\":{\"lastActivityMs\":\"5523\"}}],\"serializedClientEventId\":{\"serializedEventId\":\"hCn9Z9iQPP-D7OsP77DzwQw\",\"clientCounter\":\"16635\"}},\"authState\":{\"X-Goog-Visitor-Id\":\"CgtkRExYbnRLa2tjVSiE0_S_BjIKCgJUVxIEGgAgPA%3D%3D\"},\"requestTime\":1744644491957},\"120\":{\"method\":\"log_event\",\"request\":{\"context\":{\"client\":{\"hl\":\"en\",\"gl\":\"TW\",\"clientName\":56,\"clientVersion\":\"1.20250402.01.00.if6\",\"configInfo\":{\"appInstallData\":\"CITT9L8GEMzfrgUQh6zOHBC9irAFELvZzhwQibDOHBDf3M4cEJ3QsAUQ8tbOHBDT4a8FEMnmsAUQxYHPHBCJp84cEJT-sAUQ8OLOHBCm_c4cEParsAUQ3rzOHBCI468FEJmNsQUQyfevBRCo_84cEJ7bzhwQmvTOHBCZmLEFEL22rgUQr4__EhDv7M4cELfq_hIQiIewBRDt3s4cEPqFzxwQgc3OHBCD7s4cEIeSzhwQudnOHBDeuM4cEPyyzhwQzP3OHBDxnLAFEOzdzhwQ5Of_EhCd-c4cELjkzhwQsunOHBDg4P8SEOODuCIQ6-j-EhCLgoATEPirsQUQo-_OHBC9mbAFENvazhwQyPHOHBCDgc8cEKf4zhwQgfnOHCokQ0FNU0ZSVVctWnEtREpTQ0V0WFM2Z3Y1N0FQSjNBVWRCdz09\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\",\"connectionType\":\"CONN_CELLULAR_4G\",\"rolloutToken\":\"CPGmp_bS0ZLH6AEQq-SNluvXjAMYq-SNluvXjAM%3D\",\"browserName\":\"Chrome\",\"deviceMake\":\"apple\",\"browserVersion\":\"134.0.0.0\",\"osName\":\"Macintosh\",\"osVersion\":\"10_15_7\",\"platform\":\"DESKTOP\"}},\"events\":[{\"eventTimeMs\":1744644491978,\"latencyActionTicked\":{\"tickName\":\"qoes\",\"clientActionNonce\":\"y91teYo_EYf9nQmk\"},\"context\":{\"lastActivityMs\":\"5590\"}},{\"eventTimeMs\":1744644491983,\"latencyActionTicked\":{\"tickName\":\"mesv_s\",\"clientActionNonce\":\"y91teYo_EYf9nQmk\"},\"context\":{\"lastActivityMs\":\"5595\"}},{\"eventTimeMs\":1744644491984,\"finalPayload\":{\"csn\":\"0c9S2cYc8de4jz7Z\"},\"context\":{\"lastActivityMs\":\"5596\"}}],\"serializedClientEventId\":{\"serializedEventId\":\"hCn9Z6jsI4_R0-kP8u-v6AU\",\"clientCounter\":\"7823\"}},\"authState\":{\"X-Goog-Visitor-Id\":\"CgtZQUlLWXpOSS1ESSiE0_S_BjIKCgJUVxIEGgAgTw%3D%3D\"},\"requestTime\":1744644491985},\"121\":{\"method\":\"log_event\",\"request\":{\"context\":{\"client\":{\"hl\":\"en\",\"gl\":\"TW\",\"clientName\":56,\"clientVersion\":\"1.20250402.01.00-canary_control_1.20250408.01.00\",\"configInfo\":{\"appInstallData\":\"CITT9L8GEL22rgUQ37jOHBDk5_8SEPyyzhwQ7d7OHBDf3M4cEKb9zhwQiOOvBRC9mbAFEOzdzhwQh6zOHBCU_rAFEPDizhwQgc3OHBDr6P4SEPLWzhwQmY2xBRDM_c4cENPhrwUQ1vXOHBCJp84cELjkzhwQmZixBRDw7M4cELvZzhwQ29rOHBCe0LAFEMn3rwUQ9f7_EhDjg7giELPpzhwQpO_OHBDJ5rAFEIGDuCIQxYHPHBCIh7AFEIPuzhwQ9quwBRDM364FEN68zhwQmvTOHBC36v4SEL2KsAUQntvOHBD4q7EFEODg_xIQudnOHBCd-c4cEPqFzxwQibDOHBDWvs4cEPbrzhwqJENBTVNGUlVXLVpxLURKU0NFdFhTNmd2NTdBUEozQVVkQnc9PQ%3D%3D\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\",\"connectionType\":\"CONN_CELLULAR_4G\",\"rolloutToken\":\"CPXImOil_NH4GBCU35SW69eMAxiU35SW69eMAw%3D%3D\",\"browserName\":\"Chrome\",\"deviceMake\":\"apple\",\"browserVersion\":\"134.0.0.0\",\"osName\":\"Macintosh\",\"osVersion\":\"10_15_7\",\"platform\":\"DESKTOP\"}},\"events\":[{\"eventTimeMs\":1744644492004,\"latencyActionTicked\":{\"tickName\":\"qoes\",\"clientActionNonce\":\"vCuk7zCTD7WjCbqY\"},\"context\":{\"lastActivityMs\":\"5475\"}},{\"eventTimeMs\":1744644492009,\"latencyActionTicked\":{\"tickName\":\"mesv_s\",\"clientActionNonce\":\"vCuk7zCTD7WjCbqY\"},\"context\":{\"lastActivityMs\":\"5480\"}},{\"eventTimeMs\":1744644492010,\"finalPayload\":{\"csn\":\"D2oT0i57IExtr5BN\"},\"context\":{\"lastActivityMs\":\"5481\"}}],\"serializedClientEventId\":{\"serializedEventId\":\"hCn9Z4ODK5Wn1d8Pu5nN2QM\",\"clientCounter\":\"12258\"}},\"authState\":{\"X-Goog-Visitor-Id\":\"CgtlVlRQWnBydG1KZyiE0_S_BjIKCgJUVxIEGgAgPg%3D%3D\"},\"requestTime\":1744644492011},\"122\":{\"method\":\"log_event\",\"request\":{\"context\":{\"client\":{\"hl\":\"en\",\"gl\":\"TW\",\"clientName\":56,\"clientVersion\":\"1.20250402.01.00-canary_control_1.20250408.01.00\",\"configInfo\":{\"appInstallData\":\"CITT9L8GEIeszhwQzN-uBRD6hc8cEPaGsQUQmvTOHBC36v4SEMz9zhwQ44O4IhCHhM8cEIjjrwUQ4OD_EhCy6c4cEIiHsAUQu9nOHBDr6P4SEMn3rwUQyeawBRCm_c4cEJ7bzhwQ7d7OHBCBzc4cEPDizhwQg-7OHBDT4a8FEL2ZsAUQ7-zOHBD8ss4cEPPWzhwQpO_OHBDf3M4cEOyDgBMQxYHPHBC9tq4FEJ3QsAUQnvnOHBDevM4cEOzdzhwQudnOHBCJsM4cEIeSzhwQ37jOHBCZmLEFEJmNsQUQ-KuxBRDk5_8SELjkzhwQ9quwBRCU_rAFEL2KsAUQiafOHBDb2s4cEP7VzhwqJENBTVNGUlVXLVpxLURKU0NFdFhTNmd2NTdBUEozQVVkQnc9PQ%3D%3D\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\",\"connectionType\":\"CONN_CELLULAR_4G\",\"rolloutToken\":\"COz2npLn37PB-wEQye2XluvXjAMYye2XluvXjAM%3D\",\"browserName\":\"Chrome\",\"deviceMake\":\"apple\",\"browserVersion\":\"134.0.0.0\",\"osName\":\"Macintosh\",\"osVersion\":\"10_15_7\",\"platform\":\"DESKTOP\"}},\"events\":[{\"eventTimeMs\":1744644492031,\"latencyActionTicked\":{\"tickName\":\"qoes\",\"clientActionNonce\":\"ankLGJwslVJbTtiX\"},\"context\":{\"lastActivityMs\":\"5551\"}},{\"eventTimeMs\":1744644492037,\"latencyActionTicked\":{\"tickName\":\"mesv_s\",\"clientActionNonce\":\"ankLGJwslVJbTtiX\"},\"context\":{\"lastActivityMs\":\"5557\"}},{\"eventTimeMs\":1744644492038,\"finalPayload\":{\"csn\":\"AHVvdnMT75dKJtoz\"},\"context\":{\"lastActivityMs\":\"5558\"}}],\"serializedClientEventId\":{\"serializedEventId\":\"hCn9Z4OTLp645t0PpZSF-Ak\",\"clientCounter\":\"4069\"}},\"authState\":{\"X-Goog-Visitor-Id\":\"CgtRTVM3LVR0b2daVSiE0_S_BjIKCgJUVxIEGgAgSw%3D%3D\"},\"requestTime\":1744644492038},\"123\":{\"method\":\"log_event\",\"request\":{\"context\":{\"client\":{\"hl\":\"en\",\"gl\":\"TW\",\"clientName\":56,\"clientVersion\":\"1.20250408.01.00-canary_experiment_1.20250402.01.00\",\"configInfo\":{\"appInstallData\":\"CITT9L8GEPirsQUQ5t3OHBCF284cEN68zhwQs-nOHBDw4s4cEJT-sAUQgc3OHBDb2s4cEMz9zhwQ0-GvBRDeuM4cEJr0zhwQ7d7OHBD8ss4cEMnmsAUQvbauBRCJsM4cEOODuCIQudnOHBCe284cEPDszhwQ9f7_EhD2q7AFEOTn_xIQnvnOHBCHrM4cEKPvzhwQ4NzOHBC9irAFEODg_xIQzN-uBRCJp84cEJmNsQUQuOTOHBDr6P4SEIjjrwUQ7IOAExC36v4SELvZzhwQ89bOHBDEgc8cEMn3rwUQpv3OHBCIh7AFEJmYsQUQ7N3OHBCe0LAFEL2ZsAUQg-7OHBD6hc8cEMrxzhwqJENBTVNGUlVXLVpxLURKU0NFdFhTNmd2NTdBUEozQVVkQnc9PQ%3D%3D\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\",\"connectionType\":\"CONN_CELLULAR_4G\",\"rolloutToken\":\"CLm36Zjq64js7AEQ6q2bluvXjAMY6q2bluvXjAM%3D\",\"browserName\":\"Chrome\",\"deviceMake\":\"apple\",\"browserVersion\":\"134.0.0.0\",\"osName\":\"Macintosh\",\"osVersion\":\"10_15_7\",\"platform\":\"DESKTOP\"}},\"events\":[{\"eventTimeMs\":1744644492059,\"latencyActionTicked\":{\"tickName\":\"qoes\",\"clientActionNonce\":\"FLGZam09ACmc7C3U\"},\"context\":{\"lastActivityMs\":\"5344\"}},{\"eventTimeMs\":1744644492064,\"latencyActionTicked\":{\"tickName\":\"mesv_s\",\"clientActionNonce\":\"FLGZam09ACmc7C3U\"},\"context\":{\"lastActivityMs\":\"5349\"}},{\"eventTimeMs\":1744644492065,\"finalPayload\":{\"csn\":\"mIn7qgakyTEV3d5W\"},\"context\":{\"lastActivityMs\":\"5350\"}}],\"serializedClientEventId\":{\"serializedEventId\":\"hCn9Z_3QMfb17OsP8bLUAQ\",\"clientCounter\":\"18887\"}},\"authState\":{\"X-Goog-Visitor-Id\":\"CgtqWmgzRjc5VnI0SSiE0_S_BjIKCgJUVxIEGgAgOA%3D%3D\"},\"requestTime\":1744644492065},\"124\":{\"method\":\"log_event\",\"request\":{\"context\":{\"client\":{\"hl\":\"en\",\"gl\":\"TW\",\"clientName\":56,\"clientVersion\":\"1.20250402.01.00.if6\",\"configInfo\":{\"appInstallData\":\"CITT9L8GEJmNsQUQnfnOHBCJp84cEJT-sAUQt-r-EhDM364FEKTvzhwQyfevBRCm_c4cENvazhwQ_LLOHBDv7M4cEODg_xIQ39zOHBCD7s4cEMz9zhwQmvTOHBDz1s4cEIjjrwUQu9nOHBC45M4cEOTn_xIQh6zOHBC9irAFEOvo_hIQ44O4IhC52c4cEIiHsAUQ8OLOHBCy6c4cEJ7QsAUQ-oXPHBDeuM4cEJ7bzhwQibDOHBCZmLEFEPirsQUQ0-GvBRD2q7AFEIHNzhwQ7N3OHBC37f8SEMSBzxwQ7d7OHBC9tq4FEMnmsAUQvZmwBRDevM4cENi-zhwQ_fzOHBCU0rEFKiRDQU1TRlJVVy1acS1ESlNDRXRYUzZndjU3QVBKM0FVZEJ3PT0%3D\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\",\"connectionType\":\"CONN_CELLULAR_4G\",\"rolloutToken\":\"CP215b3SzIre2wEQnOKNluvXjAMYnOKNluvXjAM%3D\",\"browserName\":\"Chrome\",\"deviceMake\":\"apple\",\"browserVersion\":\"134.0.0.0\",\"osName\":\"Macintosh\",\"osVersion\":\"10_15_7\",\"platform\":\"DESKTOP\"}},\"events\":[{\"eventTimeMs\":1744644492086,\"latencyActionTicked\":{\"tickName\":\"qoes\",\"clientActionNonce\":\"sECZNJLHcqI5MUXz\"},\"context\":{\"lastActivityMs\":\"5774\"}},{\"eventTimeMs\":1744644492091,\"latencyActionTicked\":{\"tickName\":\"mesv_s\",\"clientActionNonce\":\"sECZNJLHcqI5MUXz\"},\"context\":{\"lastActivityMs\":\"5779\"}},{\"eventTimeMs\":1744644492092,\"finalPayload\":{\"csn\":\"dWquYy-12CKrgHLr\"},\"context\":{\"lastActivityMs\":\"5780\"}}],\"serializedClientEventId\":{\"serializedEventId\":\"hCn9Z4-DJJyzms0PpNiDyQQ\",\"clientCounter\":\"9019\"}},\"authState\":{\"X-Goog-Visitor-Id\":\"CgtrVTEtVmVCY25lZyiE0_S_BjIKCgJUVxIEGgAgHQ%3D%3D\"},\"requestTime\":1744644492092},\"125\":{\"method\":\"log_event\",\"request\":{\"context\":{\"client\":{\"hl\":\"en\",\"gl\":\"TW\",\"clientName\":56,\"clientVersion\":\"1.20250402.01.00\",\"configInfo\":{\"appInstallData\":\"CITT9L8GEImnzhwQntvOHBC52c4cEODczhwQqf_OHBDFgc8cEIHNzhwQ-oXPHBDw7M4cEIPuzhwQhtvOHBC9tq4FEOTn_xIQ29rOHBC9mbAFELfq_hIQ6-j-EhDV9c4cEN68zhwQl7L_EhCIh7AFEJmNsQUQveawBRDz1s4cEJmYsQUQ9quwBRCd-c4cELvZzhwQyeawBRD8ss4cEMz9zhwQpv3OHBD4q7EFEO3ezhwQlP6wBRC45M4cELPpzhwQ3rjOHBCHrM4cEOGCgBMQmvTOHBDw4s4cEMn3rwUQibDOHBDs3c4cEIjjrwUQo-_OHBDjg7giEODg_xIQndCwBRC-irAFEMzfrgUQ0-GvBRDmhs8cENm-zhwQyfHOHBDg5M4cEOrizhwQ7-3OHCokQ0FNU0ZSVVctWnEtREpTQ0V0WFM2Z3Y1N0FQSjNBVWRCdz09\"},\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\",\"connectionType\":\"CONN_CELLULAR_4G\",\"rolloutToken\":\"CO-Mttyr6qGHmAEQ142iluvXjAMY142iluvXjAM%3D\",\"browserName\":\"Chrome\",\"deviceMake\":\"apple\",\"browserVersion\":\"134.0.0.0\",\"osName\":\"Macintosh\",\"osVersion\":\"10_15_7\",\"platform\":\"DESKTOP\"}},\"events\":[{\"eventTimeMs\":1744644492117,\"latencyActionTicked\":{\"tickName\":\"qoes\",\"clientActionNonce\":\"sSemyMm3V2ISPcEX\"},\"context\":{\"lastActivityMs\":\"5447\"}},{\"eventTimeMs\":1744644492122,\"latencyActionTicked\":{\"tickName\":\"mesv_s\",\"clientActionNonce\":\"sSemyMm3V2ISPcEX\"},\"context\":{\"lastActivityMs\":\"5452\"}},{\"eventTimeMs\":1744644492123,\"finalPayload\":{\"csn\":\"400VuBWzZ9AmqM73\"},\"context\":{\"lastActivityMs\":\"5453\"}}],\"serializedClientEventId\":{\"serializedEventId\":\"hCn9Z8ixOOKCpskPh4Pa4AQ\",\"clientCounter\":\"14699\"}},\"authState\":{\"X-Goog-Visitor-Id\":\"CgtLa05ILU5qY2FBOCiE0_S_BjIKCgJUVxIEGgAgKw%3D%3D\"},\"requestTime\":1744644492123}},\"expiration\":1744730892124,\"creation\":1744644492124}"
+        },
+        {
+          "name": "yt-remote-device-id",
+          "value": "{\"data\":\"fcbab7e8-fda7-46a0-a2e2-9051684cedaf\",\"expiration\":1773662595289,\"creation\":1742126595289}"
+        }
+      ]
+    }
+  ]
+}
