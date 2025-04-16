@@ -19,7 +19,7 @@ export async function handleOTP(page: Page) {
 }
 
 export async function agreeToTerms(page: Page) {
-  await page.locator('label').filter({ hasText: '我僅有中華民國國籍與稅籍，且出生地非美國' }).click();
+  await page.locator('label').filter({ hasText: '我僅有中華民國國籍與稅籍' }).click();
   await page.getByRole('button', { name: '確認' }).click();
   await page.getByText('我已閱讀個人資料使用同意書').click();
   await page.getByRole('button', { name: '我同意' }).click();
@@ -83,7 +83,7 @@ export async function fillPersonalInfo(page: Page) {
   // 緊急聯絡人
   await page.getByPlaceholder('請輸入緊急聯絡人姓名').fill(testData.emergencyContact.name);
   await page.getByPlaceholder('請輸入緊急聯絡人手機').fill(testData.emergencyContact.phone);
-  await page.locator('div').filter({ hasText: /^緊急聯絡人\*請提供可協助聯繫交割款之聯絡人請選擇緊急聯絡人關係配偶父母子女兄弟姊妹親戚朋友同事其他$/ }).getByRole('combobox').selectOption(testData.emergencyContact.relationship);
+  await page.locator('div').filter({ hasText: /^請選擇緊急聯絡人關係配偶父母子女兄弟姊妹親戚朋友同事其他\*若緊急聯絡人關係為父母或配偶，應與身分證背面資訊一致$/ }).getByRole('combobox').selectOption(testData.emergencyContact.relationship);
 }
 
 export async function fillInvestmentInfo(page: Page) {
