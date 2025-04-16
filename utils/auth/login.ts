@@ -1,7 +1,7 @@
 import { Page, test } from '@playwright/test';
 import { getUser } from '@utils/auth/getUser';
 import { getCaptcha } from '@utils/captcha/getCaptcha';
-test.use({ storageState:'auth.json'});
+test.use({ storageState:'./utils/auth/auth.json'});
 
 export async function login(page: Page) {
   //效能問題
@@ -27,9 +27,9 @@ export async function login(page: Page) {
     }
 
     await page.waitForTimeout(3000);
-    await page.context().storageState({ path: 'auth.json' });
+    await page.context().storageState({ path: './utils/auth/auth.json' });
   } else{
     console.log('不需登入');
-    await page.context().storageState({ path: 'auth.json' });
+    await page.context().storageState({ path: './utils/auth/auth.json' });
   }
 }

@@ -3,12 +3,12 @@ import { Page, test ,expect } from '@playwright/test';
 import { login } from '@utils/auth/login';
 import { getUser } from '@utils/auth/getUser';
 
-test.use({ storageState:'webca.json'});
+test.use({ storageState:'./utils/auth/webca.json'});
 
 dotenv.config();
 
 export async function webca(page: Page) {
-    test.setTimeout(150000);
+    test.setTimeout(60000);
     const {BIRTHDAY} = await getUser(page);
 
     //前往憑證申請頁
@@ -35,10 +35,10 @@ export async function webca(page: Page) {
         await page1.getByRole('button', { name: '確定' }).click();
 
         await expect(page.getByText('有效')).toBeVisible();
-        await page.context().storageState({path:'webca.json'});
+        await page.context().storageState({path:'./utils/auth/webca.json'});
     } else{
         console.log("不需申請憑證");
-        await page.context().storageState({path:'webca.json'});
+        await page.context().storageState({path:'./utils/auth/webca.json'});
     }
 
 };

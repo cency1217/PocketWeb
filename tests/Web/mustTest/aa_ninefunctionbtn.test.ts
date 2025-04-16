@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-test.use({ storageState:'auth.json'});
+test.use({ storageState:'./utils/auth/auth.json'});
 
 test('九宮格', async ({ page }) => {
   test.setTimeout(150000);

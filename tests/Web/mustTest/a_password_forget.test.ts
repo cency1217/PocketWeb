@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { webca } from '@utils/auth/webca';
 import { getUser } from '@utils/auth/getUser';
 
-test.use({ storageState:'webca.json'});//使用登入狀態
+test.use({ storageState:'./utils/auth/webca.json'});//使用登入狀態
 
 test('忘記密碼＿有憑證', async ({ page }) => {
   const { USERNAME , PASSWORD , BIRTHDAY } = await getUser(page);
@@ -43,5 +43,5 @@ test('忘記密碼＿有憑證', async ({ page }) => {
   await page.getByRole('button', { name: '登入' }).click();
   
   await page.waitForTimeout(5000); 
-  await page.context().storageState({path:'auth.json'});
+  await page.context().storageState({path:'./utils/auth/auth.json'});
 });
