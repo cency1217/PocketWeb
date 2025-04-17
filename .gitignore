@@ -4,6 +4,7 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 .env
-auth.json
-webca.json
 .DS_Store
+./utils/auth/auth.json
+./utils/auth/webca.json
+captcha.png
