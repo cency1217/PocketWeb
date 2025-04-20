@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@utils/*": ["utils/*"],
+        "@config/*": ["config/*"],
+        "@tests/*": ["tests/*"],
+        "@test-files/*": ["test-files/*"]
+      }
+    }
+  }
