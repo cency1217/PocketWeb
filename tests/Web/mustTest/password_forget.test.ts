@@ -1,10 +1,12 @@
 import { test, expect } from '@playwright/test';
 import { webca } from '@utils/auth/webca';
 import { getUser } from '@utils/auth/getUser';
+import { genPwd } from '@utils/helper/genPwd';
+import { getCaptcha } from '@utils/captcha/getCaptcha';
 
 test.use({ storageState:'./utils/auth/webca.json'});//使用登入狀態
 
-test('忘記密碼＿有憑證', async ({ page }) => {
+test('pwd_forget_with_webca', async ({ page }) => {
   const { USERNAME , PASSWORD , BIRTHDAY } = await getUser(page);
   test.slow(); //延長測試時間三倍 因收驗證簡訊需較久的操作
   await page.goto('');
@@ -25,23 +27,28 @@ test('忘記密碼＿有憑證', async ({ page }) => {
   await page.getByRole('button', { name: '確認' }).click();
   await page.getByRole('button', { name: '密碼變更' }).click();
 
-  await page.getByPlaceholder('請輸入新密碼').fill('1111bright'); //輸入新密碼
-  await page.getByPlaceholder('請再次輸入新密碼').fill('1111bright'); //再次輸入新密碼
-  await page.getByPlaceholder('請輸入驗證碼').click();
-  await page.waitForTimeout(10000);
-  await page.getByRole('button', { name: '確認' }).click();
+  const newPwd = genPwd();
+  await page.getByPlaceholder('請輸入新密碼').fill('newPwd'); //輸入新密碼
+  await page.getByPlaceholder('請再次輸入新密碼').fill('newPwd'); //再次輸入新密碼
+
+  const ocrSuccess = await getCaptcha(page);
+  if (!ocrSuccess) {
+      throw new Error('驗證碼辨識失敗');
+  }
+
   await page.getByRole('button', { name: '前往首頁' }).click();
 
   await page.getByRole('textbox', { name: '請輸入身分證字號' }).fill(USERNAME);
-  await page.locator('#password').fill('');
-  await page.locator('#password').press('Tab');
-  await page.locator('#password').press('Tab');
+  await page.locator('#password').fill(newPwd);
 
   // 暫停 輸入驗證碼
   await page.waitForTimeout(10000); 
 
-  await page.getByRole('button', { name: '登入' }).click();
+  const ocrSuccess_login = await getCaptcha(page);
+  if (!ocrSuccess_login) {
+      throw new Error('驗證碼辨識失敗');
+  }
   
-  await page.waitForTimeout(5000); 
+  await page.waitForTimeout(3000); 
   await page.context().storageState({path:'./utils/auth/auth.json'});
 });

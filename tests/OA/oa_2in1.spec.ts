@@ -25,11 +25,9 @@ async function drawSignature(page: Page) {
   const centerX = box.x + box.width / 2;
   const centerY = box.y + box.height / 2;
 
-  // 移動到起始位置（C 的起點）
+  // 簽名
   await page.mouse.move(centerX + 30, centerY - 20);
   await page.mouse.down();
-
-  // 畫圓弧形的 "C"
   for (let i = 0; i < 15; i++) {
     const angle = (Math.PI / 2) + (i * Math.PI / 7);
     const x = centerX + Math.cos(angle) * 40;

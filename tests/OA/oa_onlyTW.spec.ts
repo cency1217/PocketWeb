@@ -20,7 +20,7 @@ async function agreeToFinalTerms(page: Page) {
   await page.getByRole('button', { name: '我同意' }).click();
 }
 
-test('台股開戶流程測試', async ({ page }) => {
+test('oa_onlyTW', async ({ page }) => {
   test.setTimeout(testData.timeouts.test);
   await page.setViewportSize(testData.viewport);
   
