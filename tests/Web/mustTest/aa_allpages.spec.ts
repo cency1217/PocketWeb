@@ -1,14 +1,10 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
+import { login } from '@utils/auth/login';
 
 test('test', async ({ page }) => {
-  await page.goto('https://www.pocket.tw/');
-  await page.getByRole('textbox', { name: '請輸入身分證字號' }).fill('B222790712');
-  await page.locator('#password').fill('1111bright');
-  await page.locator('#password').press('Tab');
-  await page.waitForTimeout(10000); //暫停輸入驗證碼
-  await page.getByRole('button', { name: '登入' }).click();
-  await page.getByRole('button', { name: '關閉' }).click();
-  await page.getByRole('button', { name: '關閉' }).click();
+  await login(page);
+
+  await page.goto('');
   await page.getByRole('link', { name: '口袋美股 新功能' }).click();
   const page1 = await page1Promise;
   const page2Promise = page.waitForEvent('popup');

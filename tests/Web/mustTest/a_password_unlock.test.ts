@@ -5,9 +5,9 @@ import { getCaptcha } from '@utils/captcha/getCaptcha';
 test('pwd_unlock', async ({ page }) => {
   test.slow();
 
-  const { USERNAME , PASSWORD , BIRTHDAY } = await getUser(page);
+  const { USERNAME , BIRTHDAY } = await getUser(page);
   await page.goto('');
-  await page.getByRole('textbox', { name: '請輸入身分證字號' }).fill('USERNAME');
+  await page.getByRole('textbox', { name: '請輸入身分證字號' }).fill(USERNAME);
   await page.locator('#password').fill('a12345678');//輸入錯誤密碼
   await page.getByRole('textbox', { name: '請輸入驗證碼' }).click();
   await page.waitForTimeout(10000); //暫停輸入驗證碼
@@ -28,7 +28,7 @@ test('pwd_unlock', async ({ page }) => {
   await page.getByRole('link', { name: '密碼解鎖' }).click();
 
   await page.getByRole('textbox', { name: '請輸入身分證字號' }).fill('USERNAME');
-  await page.getByPlaceholder('年 / 月 / 日').fill('1997/05/22');
+  await page.getByPlaceholder('年 / 月 / 日').fill(BIRTHDAY);
   await page.getByRole('button', { name: '確認' }).click();
   await page.getByRole('button', { name: '發送驗證碼' }).click();
   await page.locator('section').filter({ hasText: '簡訊驗證碼發送已成功發送至手機，請在五分鐘內輸入該密碼避免失效' }).getByRole('button').click();
