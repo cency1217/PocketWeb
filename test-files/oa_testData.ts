@@ -64,5 +64,8 @@ export const testData = {
     standard: 3000,
     long: 30000,
     test: 120000
-  }
+  },
+
+  // 案件編號
+  case_no: 'AOZ015'
 }; 

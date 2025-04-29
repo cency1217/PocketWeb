@@ -1,19 +1,10 @@
-import { test, expect } from '@playwright/test';
-import { getUser } from '@utils/auth/getUser';
+import { test } from '@playwright/test';
+import { login } from '@utils/auth/login';
 
 test('test', async ({ page }) => {
+  await login(page);
+
   await page.goto('');
-
-  const { USERNAME , PASSWORD } = await getUser(page);
-
-  await page.getByRole('textbox', { name: '請輸入身分證字號' }).fill(USERNAME);
-  await page.locator('#password').fill(PASSWORD);
-
-  await page.waitForTimeout(10000); //暫停輸入驗證碼
-  await page.getByRole('button', { name: '登入' }).click();
-  await page.getByRole('button', { name: '關閉' }).click();
-  await page.getByRole('button', { name: '關閉' }).click();
-  
   await page.getByRole('link', { name: '口袋美股 新功能' }).click();
   const page1 = await page1Promise;
   const page2Promise = page.waitForEvent('popup');

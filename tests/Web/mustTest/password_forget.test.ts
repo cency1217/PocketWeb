@@ -6,8 +6,8 @@ import { getCaptcha } from '@utils/captcha/getCaptcha';
 
 test.use({ storageState:'./utils/auth/webca.json'});//使用登入狀態
 
-test('pwd_forget_with_webca', async ({ page }) => {
-  const { USERNAME , PASSWORD , BIRTHDAY } = await getUser(page);
+test('忘記密碼＿有憑證', async ({ page }) => {
+  const { USERNAME , BIRTHDAY } = await getUser(page);
   test.slow(); //延長測試時間三倍 因收驗證簡訊需較久的操作
   await page.goto('');
   await page.getByRole('button', { name: '登出' }).click();
