@@ -5,6 +5,6 @@ node_modules/
 /playwright/.cache/
 .env
 .DS_Store
+captcha.png
 auth.json
 webca.json
-captcha.png
