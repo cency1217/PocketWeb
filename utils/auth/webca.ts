@@ -25,6 +25,7 @@ export async function webca(page: Page) {
         const page1 = await page1Promise;
         
         await page1.getByPlaceholder('20010203').fill(BIRTHDAY);
+        await page.waitForTimeout(1000);
         await page1.getByRole('button', { name: '驗證並發送簡訊驗證碼' }).click();
         await page1.getByPlaceholder('請輸入驗證碼').click();
         await page.waitForTimeout(15000);
