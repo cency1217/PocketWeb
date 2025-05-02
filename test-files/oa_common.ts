@@ -22,7 +22,7 @@ export async function agreeToTerms(page: Page) {
   await page.locator('label').filter({ hasText: '我僅有中華民國國籍與稅籍' }).click();
   await page.getByRole('button', { name: '確認' }).click();
   await page.getByText('我已閱讀個人資料使用同意書').click();
-  await page.getByRole('button', { name: '我同意' }).click();
+  await page.getByRole('button', { name: '同意' }).click();
 }
 
 export async function uploadFile(page: Page, selector: string, filePath: string, needConfirm: boolean = false) {
@@ -54,7 +54,7 @@ export async function setupBankAccount(page: Page) {
   await page.locator('li').filter({ hasText: '-測試銀行' }).click();
   await page.getByPlaceholder('請輸入銀行帳號').fill(testData.bankAccount);
   await page.getByText('我已閱讀eDDA身分確認服務類約定條款').click();
-  await page.getByRole('button', { name: '我同意' }).click();
+  await page.getByRole('button', { name: '同意' }).click();
 }
 
 export async function fillPersonalInfo(page: Page) {

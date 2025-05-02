@@ -47,11 +47,12 @@ async function agreeToFinalTerms(page: Page) {
 
   for (const agreement of agreements) {
     await page.getByText(agreement).click();
-    await page.getByRole('button', { name: '我同意' }).click();
+    await page.getByRole('button', { name: '同意並確認' }).click();
   }
 }
 
 test('oa_2in1', async ({ page }) => {
+  await page.waitForTimeout(10000);
   test.setTimeout(testData.timeouts.test);
   await page.setViewportSize(testData.viewport);
   
@@ -92,20 +93,19 @@ test('oa_2in1', async ({ page }) => {
 
   // 同意最終條款
   await agreeToFinalTerms(page);
-  await page.getByRole('button', { name: '下一步' }).click();
 
   // 簽署 W-8BEN
   await page.getByRole('button', { name: '請在此簽名' }).click();
   await page.waitForTimeout(testData.timeouts.standard);
   await drawSignature(page);
   await page.waitForTimeout(testData.timeouts.standard);
-  await page.getByRole('button', { name: '儲存' }).click();
+  await page.getByRole('button', { name: '儲存送出' }).click();
   await page.waitForTimeout(testData.timeouts.standard);
 
   // 最終確認
-  await page.getByText('本人已詳細審閱相關文件且明瞭同意全部內容，並一次簽訂各項契約及相關文件。同時本人對於所提供之資料其正確真實性負全責').click();
+/*   await page.getByText('本人已詳細審閱相關文件且明瞭同意全部內容，並一次簽訂各項契約及相關文件。同時本人對於所提供之資料其正確真實性負全責').click();
   await page.waitForTimeout(testData.timeouts.standard);
   await page.getByRole('button', { name: '送出' }).click();
-  await page.waitForTimeout(testData.timeouts.standard);
+  await page.waitForTimeout(testData.timeouts.standard); */
   await page.getByRole('button', { name: '仍要傳送' }).click();
 });
